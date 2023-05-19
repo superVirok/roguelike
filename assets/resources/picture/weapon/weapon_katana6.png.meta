@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "0f90e696-a092-442d-b215-7b1a6bccb56a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 495,
+  "height": 495,
+  "platformSettings": {},
+  "subMetas": {
+    "weapon_katana6": {
+      "ver": "1.0.4",
+      "uuid": "0a279101-284f-4114-b2e8-0c4ffe5bfe9d",
+      "rawTextureUuid": "0f90e696-a092-442d-b215-7b1a6bccb56a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 493,
+      "height": 491,
+      "rawWidth": 495,
+      "rawHeight": 495,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

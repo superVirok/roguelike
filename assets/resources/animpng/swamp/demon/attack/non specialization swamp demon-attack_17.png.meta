@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "e2b67d81-301d-4ba9-bacc-e45738b723fe",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 329,
+  "platformSettings": {},
+  "subMetas": {
+    "non specialization swamp demon-attack_17": {
+      "ver": "1.0.4",
+      "uuid": "90899d4c-d860-4dd6-bdc5-57b44154095e",
+      "rawTextureUuid": "e2b67d81-301d-4ba9-bacc-e45738b723fe",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 111,
+      "height": 325,
+      "rawWidth": 115,
+      "rawHeight": 329,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

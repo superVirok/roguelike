@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "dab5c3e5-112d-4ab6-ae0b-d7fdb128eb7f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 374,
+  "height": 498,
+  "platformSettings": {},
+  "subMetas": {
+    "The Blind Witch_skin_08 #74037": {
+      "ver": "1.0.4",
+      "uuid": "52e48ffc-9b21-4756-8bdf-0592c0ea620f",
+      "rawTextureUuid": "dab5c3e5-112d-4ab6-ae0b-d7fdb128eb7f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 372,
+      "height": 498,
+      "rawWidth": 374,
+      "rawHeight": 498,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

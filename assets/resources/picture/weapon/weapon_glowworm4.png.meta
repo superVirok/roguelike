@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "0999b7c6-65f0-4191-80fb-6fd5fdc39d81",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 473,
+  "height": 466,
+  "platformSettings": {},
+  "subMetas": {
+    "weapon_glowworm4": {
+      "ver": "1.0.4",
+      "uuid": "624f9438-7957-42be-a44b-4b8e73df71d8",
+      "rawTextureUuid": "0999b7c6-65f0-4191-80fb-6fd5fdc39d81",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 470,
+      "height": 462,
+      "rawWidth": 473,
+      "rawHeight": 466,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

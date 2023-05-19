@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "bbf6557a-d4da-49d5-8e36-1cc77a2b38bf",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 449,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "weapon_holyLight5": {
+      "ver": "1.0.4",
+      "uuid": "7bd45971-f560-4d3d-af52-21f5f54675fb",
+      "rawTextureUuid": "bbf6557a-d4da-49d5-8e36-1cc77a2b38bf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 445,
+      "height": 509,
+      "rawWidth": 449,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
