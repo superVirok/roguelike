@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "83751d3c-0a41-41dc-b084-0bb78c63d097",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 202,
+  "height": 261,
+  "platformSettings": {},
+  "subMetas": {
+    "Dementia Swamp Subhuman_23": {
+      "ver": "1.0.4",
+      "uuid": "0b0010be-3dd7-43f4-9e2e-bd63a434bb85",
+      "rawTextureUuid": "83751d3c-0a41-41dc-b084-0bb78c63d097",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 0,
+      "width": 199,
+      "height": 261,
+      "rawWidth": 202,
+      "rawHeight": 261,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "ca6ec021-5e58-4ec0-b448-2ad2d19e5617",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 228,
+  "platformSettings": {},
+  "subMetas": {
+    "Light Bacteria_04": {
+      "ver": "1.0.4",
+      "uuid": "5d174e96-68e6-4427-b91d-d30cd0359a71",
+      "rawTextureUuid": "ca6ec021-5e58-4ec0-b448-2ad2d19e5617",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -3.5,
+      "trimX": 0,
+      "trimY": 7,
+      "width": 200,
+      "height": 221,
+      "rawWidth": 200,
+      "rawHeight": 228,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

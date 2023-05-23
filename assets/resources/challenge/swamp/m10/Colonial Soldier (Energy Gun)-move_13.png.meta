@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "820a31e4-4b52-44b6-b222-2f4db246a491",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 314,
+  "height": 379,
+  "platformSettings": {},
+  "subMetas": {
+    "Colonial Soldier (Energy Gun)-move_13": {
+      "ver": "1.0.4",
+      "uuid": "424ebe0f-db9f-4fd4-ba9f-2d51c2a1b9cf",
+      "rawTextureUuid": "820a31e4-4b52-44b6-b222-2f4db246a491",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -1,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 312,
+      "height": 377,
+      "rawWidth": 314,
+      "rawHeight": 379,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

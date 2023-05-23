@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "53ac0204-bbe1-4a11-a616-dd47e671b787",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 244,
+  "height": 252,
+  "platformSettings": {},
+  "subMetas": {
+    "Jumping_Tentacles_06": {
+      "ver": "1.0.4",
+      "uuid": "654a5bb1-225b-4daa-aa4c-caa62621651a",
+      "rawTextureUuid": "53ac0204-bbe1-4a11-a616-dd47e671b787",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 32.5,
+      "offsetY": -12.5,
+      "trimX": 65,
+      "trimY": 25,
+      "width": 179,
+      "height": 227,
+      "rawWidth": 244,
+      "rawHeight": 252,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

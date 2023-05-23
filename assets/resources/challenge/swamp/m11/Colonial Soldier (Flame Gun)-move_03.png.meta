@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "a20b9c65-2918-47c2-881f-5edde62d3740",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 280,
+  "height": 392,
+  "platformSettings": {},
+  "subMetas": {
+    "Colonial Soldier (Flame Gun)-move_03": {
+      "ver": "1.0.4",
+      "uuid": "a41d35f7-c246-4184-b059-c0c78b9d4c42",
+      "rawTextureUuid": "a20b9c65-2918-47c2-881f-5edde62d3740",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 0,
+      "width": 276,
+      "height": 392,
+      "rawWidth": 280,
+      "rawHeight": 392,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

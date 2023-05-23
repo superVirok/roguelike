@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "2a872c31-ba50-4c13-9241-719714ba4fda",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 320,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "Flaming Bat-fly_06": {
+      "ver": "1.0.4",
+      "uuid": "c7dfa2bd-c4e5-48e7-805e-647fcbdb4c53",
+      "rawTextureUuid": "2a872c31-ba50-4c13-9241-719714ba4fda",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -25,
+      "trimX": 0,
+      "trimY": 50,
+      "width": 320,
+      "height": 206,
+      "rawWidth": 320,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

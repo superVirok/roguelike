@@ -1,10 +1,14 @@
 
+import { Func } from "../lib/func"
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class NewClass extends cc.Component {
 
 
+    onOpenPanelShop() {
+        Func.openPanel("panel", "panelShop");
+    }
 
 
     // LIFE-CYCLE CALLBACKS:

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "2514343e-e194-4428-a954-1975730cddc3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 255,
+  "height": 181,
+  "platformSettings": {},
+  "subMetas": {
+    "guze cub-move_04": {
+      "ver": "1.0.4",
+      "uuid": "26a4027d-768d-474d-9973-430c343933ea",
+      "rawTextureUuid": "2514343e-e194-4428-a954-1975730cddc3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 251,
+      "height": 179,
+      "rawWidth": 255,
+      "rawHeight": 181,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

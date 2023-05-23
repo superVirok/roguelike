@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "5ba158f6-13bb-40f1-bad0-b606b97b3773",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 172,
+  "height": 96,
+  "platformSettings": {},
+  "subMetas": {
+    "Fluorescent trilobite_03": {
+      "ver": "1.0.4",
+      "uuid": "d38da820-35d6-4086-9002-fc0d4b2b7910",
+      "rawTextureUuid": "5ba158f6-13bb-40f1-bad0-b606b97b3773",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 172,
+      "height": 96,
+      "rawWidth": 172,
+      "rawHeight": 96,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
