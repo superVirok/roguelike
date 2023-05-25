@@ -17,6 +17,13 @@ class Func {
         )
     }
 
+    static changePanel(panel: cc.Node, path: any, fileName: any) {
+        panel.removeAllChildren();
+        let node = cc.instantiate(Res.getRes(path, fileName));
+        panel.addChild(node);
+        node.active = true;
+    }
+
     static closePanel(node: cc.Node) {
         node.runAction(
             cc.sequence(

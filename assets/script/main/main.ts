@@ -5,11 +5,14 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
+
+    @property(cc.Node)
+    role: cc.Node = null;
+
     @property(cc.Node)
     pubmain: cc.Node = null;
 
     onOpenPanelShop() {
-        cc.log("-------")
         Func.openPanel("panel", "panelShop");
     }
 
@@ -52,7 +55,10 @@ export default class NewClass extends cc.Component {
         for (let child of uiLayer.children) {
             child.zIndex = -child.y;
         }
+
     }
 
-    // update (dt) {}
+    update(dt) {
+        this.role.zIndex = -this.role.y;
+    }
 }

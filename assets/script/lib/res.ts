@@ -7,7 +7,7 @@ class Res {
         "panel": {
             "path": "panel",
             type: cc.Prefab,
-        },
+        }
     }
 
     private static res = {};
@@ -20,6 +20,7 @@ class Res {
                 if (err) {
                     console.log("------load failed", resource);
                 }
+                else console.log("------load success", resource);
                 for (let res of resource) {
                     this.res[path][res.name] = res;
                 }

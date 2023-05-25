@@ -82,7 +82,6 @@ export default class NewClass extends cc.Component {
         if (this.moveDir != 0) {
             let speed = cc.v2(Math.cos(this.moveDir) * 150, Math.sin(this.moveDir) * 150);
             this.role.getComponent(cc.RigidBody).linearVelocity = speed;
-            this.role.zIndex = -this.role.y;
         } else {
             this.role.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, 0);
         }

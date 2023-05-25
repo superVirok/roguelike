@@ -1,14 +1,22 @@
 {
   "group-list": [
     "default",
-    "uiLayer"
+    "uiLayer",
+    "role"
   ],
   "collision-matrix": [
     [
+      false,
       true,
       true
     ],
     [
+      true,
+      false,
+      true
+    ],
+    [
+      true,
       true,
       false
     ]
@@ -39,5 +47,5 @@
       "enable": false
     }
   },
-  "start-scene": "fc57aaa5-c6ed-44c0-bb40-5698b62d3c53"
+  "start-scene": "c6a34d39-111b-4b73-95e3-c6e6c7534980"
 }
