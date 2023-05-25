@@ -12,7 +12,7 @@ class Func {
         node.runAction(
             cc.sequence(
                 cc.scaleTo(0.2, 1.1),
-                cc.scaleTo(0.2, 1.1)
+                cc.scaleTo(0.2, 1.0)
             )
         )
     }

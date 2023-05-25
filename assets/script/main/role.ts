@@ -77,17 +77,17 @@ export default class NewClass extends cc.Component {
         // } else {
         //     this.node.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, 0);
         // }
-        if (this.node.x >= 360) {
-            this.node.x = 360;
-        }
-        if (this.node.x <= -360) {
-            this.node.x = -360;
-        }
-        if (this.node.y >= 785) {
-            this.node.y = 785;
-        }
-        if (this.node.y <= -450) {
-            this.node.y = -450;
-        }
+        // if (this.node.x >= 360) {
+        //     this.node.x = 360;
+        // }
+        // if (this.node.x <= -360) {
+        //     this.node.x = -360;
+        // }
+        // if (this.node.y >= 785) {
+        //     this.node.y = 785;
+        // }
+        // if (this.node.y <= -450) {
+        //     this.node.y = -450;
+        // }
     }
 }

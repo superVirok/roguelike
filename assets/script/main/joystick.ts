@@ -18,11 +18,12 @@ export default class NewClass extends cc.Component {
 
 
     onLoad() {
+        cc.director.getPhysicsManager().enabled = true;
+        cc.director.getCollisionManager().enabled = true;
         this.clickBg.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
         this.clickBg.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
         this.clickBg.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
         this.clickBg.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
-
     }
 
     // LIFE-CYCLE CALLBACKS:
@@ -30,22 +31,11 @@ export default class NewClass extends cc.Component {
         let pos1 = event.getLocation();
         pos1 = this.node.parent.convertToNodeSpaceAR(pos1);
         this.node.setPosition(pos1);
-        // let pos2 = event.getLocation();
-        // pos2 = this.node.convertToNodeSpaceAR(pos2);
-        // this.joyStick.setPosition(pos2);
+
         this.node.runAction(
             cc.fadeTo(0.5, 255)
         )
-        // let x = Math.floor(pos2.x);
-        // let y = Math.floor(pos2.y);
-        // let z = Math.pow(x * x + y * y, 0.5);
-        // if (z > 35) {
-        //     this.joyStick.x = 35 * x / z;
-        //     this.joyStick.y = 35 * y / z;
-        // }
-        // this.moveDir = cc.v2(1, 0).signAngle(cc.v2(x, y));
-        // this.role.scaleX = Math.cos(this.moveDir) > 0 ? 1 : -1;
-        // cc.log(Math.cos(this.moveDir))
+
         this.role.getComponent(cc.Animation).play("auroramove");
     }
 
@@ -57,9 +47,9 @@ export default class NewClass extends cc.Component {
         let x = Math.floor(pos.x);
         let y = Math.floor(pos.y);
         let z = Math.pow(x * x + y * y, 0.5);
-        if (z > 35) {
-            this.joyStick.x = 35 * x / z;
-            this.joyStick.y = 35 * y / z;
+        if (z > 65) {
+            this.joyStick.x = 65 * x / z;
+            this.joyStick.y = 65 * y / z;
         }
         this.moveDir = cc.v2(1, 0).signAngle(cc.v2(x, y));
     }
@@ -80,6 +70,7 @@ export default class NewClass extends cc.Component {
         this.node.runAction(
             cc.fadeTo(0.3, 0)
         )
+
     }
 
 
@@ -89,7 +80,7 @@ export default class NewClass extends cc.Component {
 
     update(dt) {
         if (this.moveDir != 0) {
-            let speed = cc.v2(Math.cos(this.moveDir) * 100, Math.sin(this.moveDir) * 100);
+            let speed = cc.v2(Math.cos(this.moveDir) * 150, Math.sin(this.moveDir) * 150);
             this.role.getComponent(cc.RigidBody).linearVelocity = speed;
             this.role.zIndex = -this.role.y;
         } else {

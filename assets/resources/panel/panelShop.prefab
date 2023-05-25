@@ -29311,7 +29311,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        260,
+        200,
         0,
         0,
         0,
@@ -29367,7 +29367,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 640,
-      "height": 530
+      "height": 450
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -29379,7 +29379,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        0,
+        25,
         0,
         0,
         0,
@@ -41790,7 +41790,7 @@
     "asset": {
       "__uuid__": "bd719408-ff22-44b2-b3f5-10ac503a72a5"
     },
-    "fileId": "aay7sKBuBDb5yHIM5ABz2Z",
+    "fileId": "2f57V9ciNFtrd6Ia55nZgt",
     "sync": false
   },
   {
@@ -41920,7 +41920,7 @@
     "asset": {
       "__uuid__": "bd719408-ff22-44b2-b3f5-10ac503a72a5"
     },
-    "fileId": "dcO3EQRhdIYbibAJR/nigK",
+    "fileId": "2aIvsOYLtM+Kqa9K/TUk7Y",
     "sync": false
   },
   {
@@ -42050,7 +42050,7 @@
     "asset": {
       "__uuid__": "bd719408-ff22-44b2-b3f5-10ac503a72a5"
     },
-    "fileId": "e8LuQCGJtMa5ROkomVPztG",
+    "fileId": "4fLlV+oExPq5Y8ACH+LZUb",
     "sync": false
   },
   {
@@ -42180,7 +42180,7 @@
     "asset": {
       "__uuid__": "bd719408-ff22-44b2-b3f5-10ac503a72a5"
     },
-    "fileId": "15ivnrtJVER4SK4yqKvDTx",
+    "fileId": "f2QDvZ/ORDFrsabFIoLeAm",
     "sync": false
   },
   {
@@ -53303,7 +53303,9 @@
       "__id__": 1463
     },
     "_enabled": true,
-    "_normalMaterial": null,
+    "_normalMaterial": {
+      "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+    },
     "_grayMaterial": null,
     "duration": 0.1,
     "zoomScale": 1.2,
@@ -53314,8 +53316,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 0,
-    "transition": 0,
+    "_N$transition": 3,
+    "transition": 3,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 255,
@@ -54230,11 +54232,11 @@
     "_enabled": true,
     "alignMode": 1,
     "_target": null,
-    "_alignFlags": 45,
-    "_left": 0,
-    "_right": 0,
-    "_top": 0,
-    "_bottom": 0,
+    "_alignFlags": 18,
+    "_left": 360,
+    "_right": 360,
+    "_top": 640,
+    "_bottom": 640,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,

@@ -16,24 +16,13 @@ export default class NewClass extends cc.Component {
 
     update(dt) {
         this.node.y = this.role.y;
-        if (this.node.y <= -50) {
-            this.node.y = -50;
+        this.node.x = this.role.x;
+        if (this.node.y <= -100) {
+            this.node.y = -100;
         }
         else if (this.node.y >= 430) {
             this.node.y = 430;
         }
-
-        if (this.node.x >= 360) {
-            this.node.x = 360;
-        }
-        if (this.node.x <= -360) {
-            this.node.x = -360;
-        }
-        if (this.node.y >= 785) {
-            this.node.y = 785;
-        }
-        if (this.node.y <= -450) {
-            this.node.y = -450;
-        }
+        cc.log(this.node.y, "----------", this.role.y)
     }
 }
