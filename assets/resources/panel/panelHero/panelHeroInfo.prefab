@@ -1264,7 +1264,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "35hRoXbkxKLLNEwwlXWKYd",
+    "fileId": "84SFnQTHVHAKWRHq7/k1km",
     "sync": false
   },
   {
@@ -1373,7 +1373,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "62H4mOCpZNz7c3gADAIBDF",
+    "fileId": "c0PgNiyThOSo+NYI+iIjg2",
     "sync": false
   },
   {
@@ -1482,7 +1482,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "0bwMG2E0dBfbkJow2DUEuF",
+    "fileId": "2bxWOUurxNKaVlrBojoB8e",
     "sync": false
   },
   {
@@ -1808,7 +1808,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "3fhsuiY4RA+okrzEt71cJH",
+    "fileId": "603c6PcJpEi4YYDNl2LFD3",
     "sync": false
   },
   {
@@ -1917,7 +1917,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "b8B6Orf6dOX5qlmOIlt11s",
+    "fileId": "4cwSqNfORE1pAmNPs0muWe",
     "sync": false
   },
   {
@@ -2026,7 +2026,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "83R/rgFaFBro9fKA+CPs2U",
+    "fileId": "13HKghw/hLT5OuUkM8Vago",
     "sync": false
   },
   {
@@ -2352,7 +2352,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "c3GFrOhFZM+atKKz3FYOiP",
+    "fileId": "cafD2HXE9H/ZrGbhDSFro4",
     "sync": false
   },
   {
@@ -2461,7 +2461,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "02yJ5mp/dMirVu/QUE9pH4",
+    "fileId": "b2rxgZezNC4rrYYKcowBjv",
     "sync": false
   },
   {
@@ -2570,7 +2570,7 @@
     "asset": {
       "__uuid__": "cc62cb1a-dd8d-407f-ba9f-5ad064c83c92"
     },
-    "fileId": "fbTB4nxGxASa3ECsfQ3jSF",
+    "fileId": "efpX9fBXtGa4+jBB2F+r3a",
     "sync": false
   },
   {
@@ -6146,7 +6146,7 @@
         1,
         1,
         1,
-        1
+        0
       ]
     },
     "_eulerAngles": {
@@ -6544,7 +6544,9 @@
       "__id__": 172
     },
     "_enabled": true,
-    "_normalMaterial": null,
+    "_normalMaterial": {
+      "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+    },
     "_grayMaterial": null,
     "duration": 0.1,
     "zoomScale": 1.2,
@@ -6555,8 +6557,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 0,
-    "transition": 0,
+    "_N$transition": 3,
+    "transition": 3,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 255,
@@ -7181,7 +7183,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "panelLayer": null,
     "_id": ""
   },
   {

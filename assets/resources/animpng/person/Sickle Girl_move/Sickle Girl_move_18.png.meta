@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "0f4b7518-1c0d-4edf-9c05-94b620998f2e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 284,
+  "height": 360,
+  "platformSettings": {},
+  "subMetas": {
+    "Sickle Girl_move_18": {
+      "ver": "1.0.4",
+      "uuid": "4dc9f9e5-988c-499c-9edb-a2c6a2c5bb49",
+      "rawTextureUuid": "0f4b7518-1c0d-4edf-9c05-94b620998f2e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 281,
+      "height": 360,
+      "rawWidth": 284,
+      "rawHeight": 360,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

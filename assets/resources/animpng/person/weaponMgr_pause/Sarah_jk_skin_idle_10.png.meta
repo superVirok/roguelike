@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "e47c32ea-3443-4588-aa7b-d42ae1170703",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 274,
+  "height": 367,
+  "platformSettings": {},
+  "subMetas": {
+    "Sarah_jk_skin_idle_10": {
+      "ver": "1.0.4",
+      "uuid": "7371230d-21d3-405f-a840-ce8f611bfe82",
+      "rawTextureUuid": "e47c32ea-3443-4588-aa7b-d42ae1170703",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -1,
+      "trimX": 3,
+      "trimY": 2,
+      "width": 269,
+      "height": 365,
+      "rawWidth": 274,
+      "rawHeight": 367,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

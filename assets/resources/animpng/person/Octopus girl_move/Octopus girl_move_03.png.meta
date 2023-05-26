@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "8e6266d9-1f95-47e5-ad51-7b7c62ff9f5f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 229,
+  "height": 347,
+  "platformSettings": {},
+  "subMetas": {
+    "Octopus girl_move_03": {
+      "ver": "1.0.4",
+      "uuid": "2bcc9066-3381-4134-adf8-3ae2a0d034c5",
+      "rawTextureUuid": "8e6266d9-1f95-47e5-ad51-7b7c62ff9f5f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -1,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 226,
+      "height": 345,
+      "rawWidth": 229,
+      "rawHeight": 347,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -3,91 +3,74 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
-    // @property(cc.Node)
-    // stickBase: cc.Node = null;
+    @property(cc.Node)
+    tipOpenPanelHero: cc.Node = null;
+    @property(cc.Node)
+    tipOpenPanelAirdrop: cc.Node = null;
+    @property(cc.Node)
+    tipOpenPanelWeapon: cc.Node = null;
+    @property(cc.Node)
+    tipOpenPanelOrder: cc.Node = null;
+    @property(cc.Node)
+    tipOpenPanelDiscrecorder: cc.Node = null;
 
-    // @property(cc.Node)
-    // joyStick: cc.Node = null;
-
-    // animation: any = null;
-
-    // moveDir: number = 0;
+    @property(cc.Node)
+    tipOpenPanelCollection: cc.Node = null;
 
     protected onLoad(): void {
-        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
-        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+
     }
 
+
+    onCollisionEnter(other: any, self: any) {
+        if (other.tag == 1) {
+            this.tipOpenPanelHero.active = true;
+        }
+        else if (other.tag == 2) {
+            this.tipOpenPanelWeapon.active = true;
+        }
+        else if (other.tag == 3) {
+            this.tipOpenPanelOrder.active = true;
+        }
+        else if (other.tag == 4) {
+            this.tipOpenPanelAirdrop.active = true;
+        }
+        else if (other.tag == 5) {
+            this.tipOpenPanelDiscrecorder.active = true;
+        }
+        else if (other.tag == 6) {
+            this.tipOpenPanelCollection.active = true;
+        }
+    }
+
+    onCollisionExit(other: any, self: any) {
+        if (other.tag == 1) {
+            this.tipOpenPanelHero.active = false;
+        }
+        else if (other.tag == 2) {
+            this.tipOpenPanelWeapon.active = false;
+        }
+        else if (other.tag == 3) {
+            this.tipOpenPanelOrder.active = false;
+        }
+        else if (other.tag == 4) {
+            this.tipOpenPanelAirdrop.active = false;
+        }
+        else if (other.tag == 5) {
+            this.tipOpenPanelDiscrecorder.active = false;
+        }
+        else if (other.tag == 6) {
+            this.tipOpenPanelCollection.active = false;
+        }
+    }
 
 
 
     start() {
-        // this.animation = this.getComponent(cc.Animation);
 
-        // this.stickBase.on(cc.Node.EventType.TOUCH_START, (event: cc.Touch) => {
-        //     let pos = event.getLocation();
-        //     pos = this.stickBase.convertToNodeSpaceAR(pos);
-        //     this.joyStick.setPosition(pos);
-        //     let x = Math.floor(pos.x);
-        //     let y = Math.floor(pos.y);
-        //     let z = Math.pow(x * x + y * y, 0.5);
-        //     if (z > 35) {
-        //         this.joyStick.x = 35 * x / z;
-        //         this.joyStick.y = 35 * y / z;
-        //     }
-        //     this.moveDir = cc.v2(1, 0).signAngle(cc.v2(x, y));
-        //     this.node.scaleX = Math.cos(this.moveDir) > 0 ? 1 : -1;
-        //     cc.log(Math.cos(this.moveDir))
-        //     this.animation.play("auroramove");
-        // })
-
-        // this.stickBase.on(cc.Node.EventType.TOUCH_MOVE, (event: cc.Touch) => {
-        //     let pos = event.getLocation();
-        //     pos = this.stickBase.convertToNodeSpaceAR(pos);
-        //     this.joyStick.setPosition(pos);
-        //     let x = Math.floor(pos.x);
-        //     let y = Math.floor(pos.y);
-        //     let z = Math.pow(x * x + y * y, 0.5);
-        //     if (z > 35) {
-        //         this.joyStick.x = 35 * x / z;
-        //         this.joyStick.y = 35 * y / z;
-        //     }
-        //     this.moveDir = cc.v2(1, 0).signAngle(cc.v2(x, y));
-
-        // })
-
-        // this.stickBase.on(cc.Node.EventType.TOUCH_END, (event: cc.Touch) => {
-        //     this.moveDir = 0;
-        //     this.joyStick.setPosition(cc.v2(0, 0));
-        //     this.animation.play("auroraidle");
-        // })
-
-        // this.stickBase.on(cc.Node.EventType.TOUCH_CANCEL, (event: cc.Touch) => {
-        //     this.moveDir = 0;
-        //     this.joyStick.setPosition(cc.v2(0, 0));
-        //     this.animation.play("auroraidle");
-        // })
     }
 
     update(dt) {
-        // if (this.moveDir != 0) {
-        //     let speed = cc.v2(Math.cos(this.moveDir) * 100, Math.sin(this.moveDir) * 100);
-        //     this.node.getComponent(cc.RigidBody).linearVelocity = speed;
-        //     this.node.zIndex = -this.node.y;
-        // } else {
-        //     this.node.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, 0);
-        // }
-        // if (this.node.x >= 360) {
-        //     this.node.x = 360;
-        // }
-        // if (this.node.x <= -360) {
-        //     this.node.x = -360;
-        // }
-        // if (this.node.y >= 785) {
-        //     this.node.y = 785;
-        // }
-        // if (this.node.y <= -450) {
-        //     this.node.y = -450;
-        // }
+
     }
 }

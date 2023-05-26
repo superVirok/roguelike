@@ -12,9 +12,37 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     pubmain: cc.Node = null;
 
+
+
     onOpenPanelShop() {
         Func.openPanel("panel", "panelShop");
     }
+
+    onOpenPanelHero() {
+        Func.openPanel("panel", "panelHero");
+    }
+
+    onOpenPanelAirdrop() {
+
+    }
+
+    onOpenPanelWeapon() {
+
+    }
+
+    onOpenPanelOrder() {
+
+    }
+
+    onOpenPanelDiscrecorder() {
+
+    }
+
+
+    onOpenPanelCollection() {
+
+    }
+
 
 
     // LIFE-CYCLE CALLBACKS:

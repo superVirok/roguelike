@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "c1823394-253a-474a-82a1-4851fdcb0756",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 226,
+  "height": 388,
+  "platformSettings": {},
+  "subMetas": {
+    "Octopus_Idol_move_11": {
+      "ver": "1.0.4",
+      "uuid": "6f978d7e-d8fd-4a3b-b9b1-88a3a4cf77f6",
+      "rawTextureUuid": "c1823394-253a-474a-82a1-4851fdcb0756",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 223,
+      "height": 387,
+      "rawWidth": 226,
+      "rawHeight": 388,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

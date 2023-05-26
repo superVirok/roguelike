@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "f893e72a-072b-4aca-96af-2c63119f98b1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 287,
+  "height": 398,
+  "platformSettings": {},
+  "subMetas": {
+    "Aurora_Skin_idle_29": {
+      "ver": "1.0.4",
+      "uuid": "0d0d5d0e-b348-49ee-b10c-84ce49a00a84",
+      "rawTextureUuid": "f893e72a-072b-4aca-96af-2c63119f98b1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 283,
+      "height": 393,
+      "rawWidth": 287,
+      "rawHeight": 398,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

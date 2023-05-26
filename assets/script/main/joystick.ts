@@ -1,5 +1,3 @@
-
-
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -36,7 +34,7 @@ export default class NewClass extends cc.Component {
             cc.fadeTo(0.5, 255)
         )
 
-        this.role.getComponent(cc.Animation).play("auroramove");
+        this.role.getComponent(cc.Animation).play("AuroraMove");
     }
 
     private onTouchMove(event: cc.Touch) {
@@ -57,7 +55,7 @@ export default class NewClass extends cc.Component {
     private onTouchCancel(event: cc.Touch) {
         this.moveDir = 0;
         this.joyStick.setPosition(cc.v2(0, 0));
-        this.role.getComponent(cc.Animation).play("auroraidle");
+        this.role.getComponent(cc.Animation).play("AuroraIdle");
         this.node.runAction(
             cc.fadeTo(0.3, 0)
         )
@@ -66,7 +64,7 @@ export default class NewClass extends cc.Component {
     private onTouchEnd(event: cc.Touch) {
         this.moveDir = 0;
         this.joyStick.setPosition(0, 0);
-        this.role.getComponent(cc.Animation).play("auroraidle");
+        this.role.getComponent(cc.Animation).play("AuroraIdle");
         this.node.runAction(
             cc.fadeTo(0.3, 0)
         )

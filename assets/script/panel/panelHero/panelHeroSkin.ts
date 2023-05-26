@@ -5,10 +5,11 @@ const { ccclass, property } = cc._decorator;
 export default class NewClass extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
+    panelLayer: cc.Node = null;
 
     onBack() {
-        let panelLayer = cc.find("Canvas/panelLayer/panelHero/panelLayer");
-        Func.changePanel(panelLayer, "panel", "panelSkin");
+        this.panelLayer = this.node.parent;
+        Func.changePanel(this.panelLayer, "panel", "panelHeroProp");
     }
     // onLoad () {}
 

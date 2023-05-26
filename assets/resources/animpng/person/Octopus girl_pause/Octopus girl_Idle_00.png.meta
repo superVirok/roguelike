@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "f8456bff-987c-493c-a3b2-56d38f01850b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 212,
+  "height": 368,
+  "platformSettings": {},
+  "subMetas": {
+    "Octopus girl_Idle_00": {
+      "ver": "1.0.4",
+      "uuid": "433a61ef-9b73-4dc8-8f7e-fed6282bc484",
+      "rawTextureUuid": "f8456bff-987c-493c-a3b2-56d38f01850b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -1,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 210,
+      "height": 366,
+      "rawWidth": 212,
+      "rawHeight": 368,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
