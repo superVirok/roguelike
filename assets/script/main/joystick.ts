@@ -39,6 +39,9 @@ export default class NewClass extends cc.Component {
 
     private onTouchMove(event: cc.Touch) {
         this.role.scaleX = (event.getLocationX() - event.getStartLocation().x) > 0 ? 1 : -1;
+        if (this.role.getComponentInChildren(cc.ProgressBar)) {
+            this.role.getChildByName("hpProgress").scaleX = this.role.scaleX;
+        }
         let pos = event.getLocation();
         pos = this.node.convertToNodeSpaceAR(pos);
         this.joyStick.setPosition(pos);

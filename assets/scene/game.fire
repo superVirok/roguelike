@@ -81,10 +81,10 @@
         "__id__": 314
       },
       {
-        "__id__": 6
+        "__id__": 322
       },
       {
-        "__id__": 322
+        "__id__": 6
       }
     ],
     "_active": true,
@@ -397,6 +397,12 @@
       "__id__": 6
     },
     "_enabled": true,
+    "tipOpenPanelHero": null,
+    "tipOpenPanelAirdrop": null,
+    "tipOpenPanelWeapon": null,
+    "tipOpenPanelOrder": null,
+    "tipOpenPanelDiscrecorder": null,
+    "tipOpenPanelCollection": null,
     "_id": "c8bzrKQu1EpbvQojor+8Gf"
   },
   {
@@ -15299,7 +15305,12 @@
       "__id__": 2
     },
     "_enabled": true,
-    "enemyMgr": null,
+    "enemyMgr": {
+      "__id__": 322
+    },
+    "role": {
+      "__id__": 6
+    },
     "_id": "caf4HOqQpG3qzsOEYzZ0tA"
   }
 ]
