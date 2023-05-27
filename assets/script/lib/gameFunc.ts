@@ -8,7 +8,7 @@ class GameFunc {
     private static bgSizex = 720;
     private static bgSizey = 1280;
 
-    static gameInit() {
+    static gameInit(enemyMgr: cc.Node) {
         let dt = new Date();
         this.startTime = dt.getTime();
         this.enemyList = Res.getFileList("enemy");
@@ -16,6 +16,10 @@ class GameFunc {
         for (let i in this.enemyList) {
             this.timeObj[i] = this.enemyList[i];
         }
+        for (let i = 0; i < 10; i++) {
+            this.addEnemy(enemyMgr);
+        }
+
     }
     static setMaxEnemyNum(num: number) {
         this.maxEnemyNum = num;

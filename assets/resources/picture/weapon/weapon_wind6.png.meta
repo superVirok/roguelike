@@ -1,6 +1,6 @@
 {
   "ver": "2.3.4",
-  "uuid": "c171c199-e753-435a-9a86-c5a891048f6d",
+  "uuid": "6037e641-b624-442f-a393-4edb3258d9b7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -13,8 +13,8 @@
   "subMetas": {
     "weapon_wind6": {
       "ver": "1.0.4",
-      "uuid": "b72062b8-3c3e-4bf0-983f-3b9f6fbb1421",
-      "rawTextureUuid": "c171c199-e753-435a-9a86-c5a891048f6d",
+      "uuid": "5071900f-d2b0-40b6-aa4f-96c72d39d62f",
+      "rawTextureUuid": "6037e641-b624-442f-a393-4edb3258d9b7",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

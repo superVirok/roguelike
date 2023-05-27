@@ -1,3 +1,5 @@
+import { Res } from "../lib/res"
+import { SkillMgr } from "../skill/skillMgr"
 import { GameFunc } from "../lib/gameFunc"
 const { ccclass, property } = cc._decorator;
 
@@ -9,14 +11,27 @@ export default class NewClass extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
     @property(cc.Node)
     role: cc.Node = null;
+
+
     onLoad() {
         cc.director.getCollisionManager().enabled = true;
         cc.director.getPhysicsManager().enabled = true;
+
     }
 
     start() {
-        GameFunc.setMaxEnemyNum(100);
-        GameFunc.gameInit();
+        GameFunc.setMaxEnemyNum(20);
+        GameFunc.gameInit(this.enemyMgr);
+        let roleJson = Res.getRes("json", "account").json;
+        let script = this.role.getComponent("curRole");
+        script.curHp = script.maxHp = roleJson["curRole"].maxHp;
+        script.hurt = roleJson["curRole"].hurt;
+        let skillJson = Res.getRes("json", "skill").json;
+        for (let skill in skillJson) {
+            this.schedule(() => {
+                SkillMgr.playSkill(skillJson[skill].name, this.role, this.enemyMgr, skillJson[skill].duration);
+            }, skillJson[skill].cd + skillJson[skill].duration)
+        }
     }
 
     update(dt) {

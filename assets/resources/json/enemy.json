@@ -1,0 +1,57 @@
+{
+    "enemy1": {
+        "name": "enemy1",
+        "maxHp": 100,
+        "hurt": 60
+    },
+    "enemy2": {
+        "name": "enemy2",
+        "maxHp": 150,
+        "hurt": 65
+    },
+    "enemy3": {
+        "name": "enemy3",
+        "maxHp": 200,
+        "hurt": 75
+    },
+    "enemy4": {
+        "name": "enemy4",
+        "maxHp": 250,
+        "hurt": 80
+    },
+    "enemy5": {
+        "name": "enemy5",
+        "maxHp": 250,
+        "hurt": 85
+    },
+    "enemy6": {
+        "name": "enemy6",
+        "maxHp": 300,
+        "hurt": 90
+    },
+    "enemy7": {
+        "name": "enemy7",
+        "maxHp": 400,
+        "hurt": 100
+    },
+    "enemy8": {
+        "name": "enemy8",
+        "maxHp": 550,
+        "hurt": 100
+    },
+    "enemy9": {
+        "name": "enemy9",
+        "maxHp": 750,
+        "hurt": 110
+    },
+    "enemy10": {
+        "name": "enemy10",
+        "maxHp": 1000,
+        "hurt": 120
+    },
+    "enemy11": {
+        "name": "enemy10",
+        "maxHp": 1200,
+        "hurt": 200
+    }
+}

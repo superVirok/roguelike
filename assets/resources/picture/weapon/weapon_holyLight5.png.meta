@@ -1,6 +1,6 @@
 {
   "ver": "2.3.4",
-  "uuid": "bbf6557a-d4da-49d5-8e36-1cc77a2b38bf",
+  "uuid": "931d8169-1c99-49ee-a5f0-c213a5b35dd1",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -13,8 +13,8 @@
   "subMetas": {
     "weapon_holyLight5": {
       "ver": "1.0.4",
-      "uuid": "7bd45971-f560-4d3d-af52-21f5f54675fb",
-      "rawTextureUuid": "bbf6557a-d4da-49d5-8e36-1cc77a2b38bf",
+      "uuid": "65d6a22a-55e5-419f-a065-2a449d530519",
+      "rawTextureUuid": "931d8169-1c99-49ee-a5f0-c213a5b35dd1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

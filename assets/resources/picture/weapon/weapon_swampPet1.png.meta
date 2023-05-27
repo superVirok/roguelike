@@ -1,6 +1,6 @@
 {
   "ver": "2.3.4",
-  "uuid": "2dff6fd0-b1b1-4f2f-b3d7-5c5659f159f9",
+  "uuid": "01ebdb2b-a439-4702-9586-05c8610ced24",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -13,8 +13,8 @@
   "subMetas": {
     "weapon_swampPet1": {
       "ver": "1.0.4",
-      "uuid": "2691571d-88ed-42a0-b175-38244b05df8b",
-      "rawTextureUuid": "2dff6fd0-b1b1-4f2f-b3d7-5c5659f159f9",
+      "uuid": "b6843670-4bea-41bb-a246-215d151ffd60",
+      "rawTextureUuid": "01ebdb2b-a439-4702-9586-05c8610ced24",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

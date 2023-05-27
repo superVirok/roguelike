@@ -1,0 +1,7 @@
+{
+    "curRole": {
+        "name": "aurora",
+        "maxHp": 500,
+        "hurt": 100
+    }
+}

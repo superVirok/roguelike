@@ -1,6 +1,6 @@
 {
   "ver": "2.3.4",
-  "uuid": "122d962a-1093-4394-b3d2-f0fb36e64bca",
+  "uuid": "5c9253ad-5380-484f-8ec8-6f1115aa2e3d",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -13,8 +13,8 @@
   "subMetas": {
     "weapon_glowworm6": {
       "ver": "1.0.4",
-      "uuid": "275098a8-49b1-47ff-8754-dd1873115011",
-      "rawTextureUuid": "122d962a-1093-4394-b3d2-f0fb36e64bca",
+      "uuid": "e43a7691-6027-43ef-98fc-7d862ba54b66",
+      "rawTextureUuid": "5c9253ad-5380-484f-8ec8-6f1115aa2e3d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

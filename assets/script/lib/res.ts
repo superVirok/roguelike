@@ -11,11 +11,19 @@ class Res {
         "enemy": {
             "path": "enemy",
             type: cc.Prefab
+        },
+        "weapon": {
+            "path": "weapon",
+            type: cc.Prefab
+        },
+        "json": {
+            "path": "json",
+            type: cc.JsonAsset
         }
     }
 
     private static res = {};
-    private static fileList = [];
+    private static fileList = {};
 
     static loadRes() {
         for (let path in Res.table) {
@@ -25,7 +33,7 @@ class Res {
                     console.log("------load failed", resource);
                 }
                 else console.log("------load success", resource);
-                this.fileList = resource;
+                this.fileList[path] = resource;
                 for (let res of resource) {
                     this.res[path][res.name] = res;
                 }
@@ -34,7 +42,7 @@ class Res {
     }
 
     static getFileList(path: string) {
-        return this.fileList;
+        return this.fileList[path];
     }
 
     static getRes(path: string, name: string) {

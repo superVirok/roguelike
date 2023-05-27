@@ -1,0 +1,20 @@
+{
+    "skillHolyLight0": {
+        "name": "skillHolyLight0",
+        "cd": 4,
+        "hurt": 50,
+        "duration": 5
+    },
+    "skillHolyLight1": {
+        "name": "skillHolyLight1",
+        "cd": 5,
+        "hurt": 500,
+        "duration": 7
+    },
+    "skillHolyLight2": {
+        "name": "skillHolyLight2",
+        "cd": 5,
+        "hurt": 500,
+        "duration": 7
+    }
+}

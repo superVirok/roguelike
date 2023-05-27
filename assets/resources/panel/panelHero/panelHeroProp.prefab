@@ -353,7 +353,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f7d99c59-66b5-4627-8054-2f2d3f7466fa"
+      "__uuid__": "f2935160-8063-47d8-ba90-b3f73c651dda"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3381,7 +3381,7 @@
         1,
         1,
         1,
-        0
+        1
       ]
     },
     "_eulerAngles": {
@@ -3924,7 +3924,7 @@
         1,
         1,
         1,
-        0
+        1
       ]
     },
     "_eulerAngles": {

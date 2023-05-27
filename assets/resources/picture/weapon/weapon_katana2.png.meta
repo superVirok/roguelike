@@ -1,6 +1,6 @@
 {
   "ver": "2.3.4",
-  "uuid": "d5b89672-3a5f-4c08-8505-cedea42e3a27",
+  "uuid": "d3bd6d01-954e-424e-9ec4-7b798bbb5460",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -13,8 +13,8 @@
   "subMetas": {
     "weapon_katana2": {
       "ver": "1.0.4",
-      "uuid": "24aee9b8-a43f-4c20-ac4f-4090622c3a3b",
-      "rawTextureUuid": "d5b89672-3a5f-4c08-8505-cedea42e3a27",
+      "uuid": "a15fc611-23e2-41a8-ad40-5e2f266a51d4",
+      "rawTextureUuid": "d3bd6d01-954e-424e-9ec4-7b798bbb5460",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

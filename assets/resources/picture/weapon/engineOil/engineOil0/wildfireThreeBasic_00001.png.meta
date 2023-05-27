@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "237687eb-ba28-4d21-a094-25fa5da2b267",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 162,
+  "height": 206,
+  "platformSettings": {},
+  "subMetas": {
+    "wildfireThreeBasic_00001": {
+      "ver": "1.0.4",
+      "uuid": "6d35386c-3306-45eb-8f7d-eba3bb8a628f",
+      "rawTextureUuid": "237687eb-ba28-4d21-a094-25fa5da2b267",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 158,
+      "height": 201,
+      "rawWidth": 162,
+      "rawHeight": 206,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

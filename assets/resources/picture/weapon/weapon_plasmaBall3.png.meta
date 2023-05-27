@@ -1,6 +1,6 @@
 {
   "ver": "2.3.4",
-  "uuid": "d0a92197-6a62-44b5-91d7-90b2b1875cb2",
+  "uuid": "c47c4f87-a8a3-4085-a69b-018d088a6ada",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -13,8 +13,8 @@
   "subMetas": {
     "weapon_plasmaBall3": {
       "ver": "1.0.4",
-      "uuid": "707a036b-b26d-4bed-981e-8623aeadbaff",
-      "rawTextureUuid": "d0a92197-6a62-44b5-91d7-90b2b1875cb2",
+      "uuid": "e1100122-6f5f-470b-8f4d-e9e1d6dca925",
+      "rawTextureUuid": "c47c4f87-a8a3-4085-a69b-018d088a6ada",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
