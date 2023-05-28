@@ -29,7 +29,7 @@ export default class NewClass extends cc.Component {
         let skillJson = Res.getRes("json", "skill").json;
         for (let skill in skillJson) {
             this.schedule(() => {
-                SkillMgr.playSkill(skillJson[skill].name, this.role, this.enemyMgr, skillJson[skill].duration);
+                SkillMgr.playSkill(skillJson[skill].name, this.role, skillJson[skill].duration);
             }, skillJson[skill].cd + skillJson[skill].duration)
         }
     }

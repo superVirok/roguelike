@@ -15,8 +15,8 @@ class SkillMgr {
      * @param enemyMgr 敌人管理节点
      * @param skillTime 技能持续时间
      */
-    static playSkill(skillName: string, role: cc.Node, enemyMgr: cc.Node, skillTime: number) {
-        this.skillList[skillName].play(role, enemyMgr, skillTime);
+    static playSkill(skillName: string, role: cc.Node, skillTime: number) {
+        this.skillList[skillName].play(role, skillTime);
     }
 
 }

@@ -17,6 +17,8 @@ export default class NewClass extends cc.Component {
 
     skillMgr: any = null;
 
+    isMove: boolean = false;
+
     start() {
         this.role = cc.find("Canvas/role");
         this.enemyMgr = cc.find("Canvas/enemyMgr");
@@ -24,8 +26,13 @@ export default class NewClass extends cc.Component {
     }
 
     update(dt) {
-        this.skillMgr.x = 0;
-        this.skillMgr.y = 0;
+        if (!this.isMove) {
+            this.node.x = 0;
+            this.node.y = 0;
+        }
+        if (this.node.name == "holyLight2") {
+            this.node.scaleX = this.role.scaleX;
+        }
         if (this.enemyMgr.children.length > 0) {
             for (let enemy of this.enemyMgr.children) {
                 let z = Math.pow(
@@ -36,15 +43,15 @@ export default class NewClass extends cc.Component {
                     this.minDis = z;
                 }
             }
-            // if (this.node.name == "holyLight0" && this.minDis >= 300) {
-            //     return;
-            // }
-            this.atkDir = cc.v2(1, 0).signAngle(
+            this.atkDir = cc.v2(0, 1).signAngle(
                 cc.v2(this.target.x + this.enemyMgr.x - this.role.x,
                     this.target.y + this.enemyMgr.y - this.role.y));
         }
 
-
+        // if (this.node.name == "holyLight1") {
+        //     this.node.getComponent(cc.RigidBody).linearVelocity =
+        //         cc.v2(Math.cos(this.atkDir) * 100, Math.sin(this.atkDir) * 100);
+        // }
 
     }
 }

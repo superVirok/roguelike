@@ -1,7 +1,7 @@
 {
     "skillHolyLight0": {
         "name": "skillHolyLight0",
-        "cd": 4,
+        "cd": 2,
         "hurt": 50,
         "duration": 5
     },
