@@ -22,17 +22,26 @@ export default class NewClass extends cc.Component {
     start() {
         this.role = cc.find("Canvas/role");
         this.enemyMgr = cc.find("Canvas/enemyMgr");
-        this.skillMgr = this.role.getChildByName("skillMgr");
+        this.skillMgr = cc.find("Canvas/skillMgr");
     }
 
     update(dt) {
+        this.skillMgr.x = this.role.x;
+        this.skillMgr.y = this.role.y;
         if (!this.isMove) {
             this.node.x = 0;
             this.node.y = 0;
         }
-        if (this.node.name == "holyLight2") {
-            this.node.scaleX = this.role.scaleX;
+        else {
+            this.node.getComponent(cc.RigidBody).linearVelocity =
+                cc.v2(Math.cos(this.node["atkDir"]) * 500, Math.sin(this.node["atkDir"]) * 500);
+
+            for (let child of this.node.children) {
+                cc.log(child.angle, "+-----++++++++++++++++++++", this.node.angle)
+            }
+            return;
         }
+
         if (this.enemyMgr.children.length > 0) {
             for (let enemy of this.enemyMgr.children) {
                 let z = Math.pow(

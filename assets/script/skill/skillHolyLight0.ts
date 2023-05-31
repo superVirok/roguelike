@@ -5,7 +5,7 @@ class SkillHolyLight0 {
     static play(role: cc.Node, skillTime: number) {
         this.target = null;
         let skillNode = cc.instantiate(Res.getRes("weapon", "holyLight0"));
-        role.getChildByName("skillMgr").addChild(skillNode);
+        cc.find("Canvas/skillMgr").addChild(skillNode);
         skillNode.x = 0;
         skillNode.y = 0;
         let script = skillNode.getComponent("skill");
@@ -21,6 +21,10 @@ class SkillHolyLight0 {
                 if (script.role.x - (script.target.x + script.enemyMgr.x) > 0) {
                     skillNode.angle += 180;
                 }
+                if (script.role.y - (script.target.y + script.enemyMgr.y) > 0) {
+                    skillNode.angle += 180;
+                }
+
             }
         })
         anim.on(cc.Animation.EventType.FINISHED, () => {

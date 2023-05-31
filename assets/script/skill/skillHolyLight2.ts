@@ -7,8 +7,8 @@ class SkillHolyLight2 {
         let anims = skillNode.getComponentsInChildren(cc.Animation);
         skillNode.x = 0;
         skillNode.y = 0;
-        skillNode.scaleX = role.scaleX;
-        let skillMgr = role.getChildByName("skillMgr");
+        // skillNode.scaleX = role.scaleX;
+        let skillMgr = cc.find("Canvas/skillMgr");
         skillMgr.addChild(skillNode)
         let script = skillNode.getComponent("skill");
         script.scheduleOnce(() => {
