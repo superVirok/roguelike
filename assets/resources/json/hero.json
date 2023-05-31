@@ -1,0 +1,258 @@
+{
+    "Aurora": {
+        "avatar": 101,
+        "sprite": {
+            "101": {
+                "skinName": "前天使长",
+                "modelSprite": 1001,
+                "idleSprite": 1002,
+                "animName": "AuroraIdle"
+            },
+            "102": {
+                "skinName": "堕天使",
+                "modelSprite": 1003,
+                "idleSprite": 1003,
+                "animName": "AuroraSkin1Idle"
+            }
+        },
+        "weaponid": 100,
+        "weaponName": "圣光之枪",
+        "name": "「 前 天 使 长 」 奥 罗 拉",
+        "barName": "奥 罗 拉",
+        "hp": 120,
+        "defense": 5,
+        "recover": 0,
+        "speed": 5,
+        "lucky": 1,
+        "range": 3,
+        "story": "英雄故事：奥罗拉曾是一位最忠诚的人类战士，被神赐予圣光权柄而成为大天使。在终末之战中，她率领着仅存的手下，向恶魔大军发起了最后的冲锋......在漫长的虚无岁月之后，奥罗拉偶然间被无序之神选中，在混乱时空中获得了重生。",
+        "character": "特性：圣光之枪的伤害增加基础值的50%",
+        "isLocked": false,
+        "isActive": true,
+        "unLockInfo": "勇敢无畏的大天使长，为了守护人类的家园奋战在前线"
+    },
+    "Aisia": {
+        "avatar": 201,
+        "sprite": {
+            "201": {
+                "skinName": "渊沼学者",
+                "modelSprite": 1004,
+                "idleSprite": 1005,
+                "animName": "OctopusIdle"
+            },
+            "202": {
+                "skinName": "古神偶像",
+                "modelSprite": 1006,
+                "idleSprite": 1006,
+                "animName": "OctopusSkin1Idle"
+            }
+        },
+        "weaponid": 200,
+        "weaponName": "沼泽宠物",
+        "name": "「 渊 沼 学 者」 艾 西 亚",
+        "barName": "艾 西 亚",
+        "hp": 100,
+        "defense": 2,
+        "recover": 2,
+        "speed": 4,
+        "lucky": 6,
+        "range": 15,
+        "story": "英雄故事：艾西亚与她的「宠物」曾将「伊甸-3」搅得天翻地覆，甚至一度迫使人类停止开发计划，然而，数十艘星舰的饱和式轨道轰击最终将他们淹没，宣告了殖民者的胜利......再次苏醒时，艾西亚来到了一片陌生的时空，她意识到，自己再一次获得了解放沼泽大陆的机会。",
+        "character": "特性：沼泽宠物的触手基础数量增加1",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "沼泽的生态学者，反抗人类的殖民侵略"
+    },
+    "Scythe": {
+        "avatar": 301,
+        "sprite": {
+            "301": {
+                "skinName": "废土魔女",
+                "modelSprite": 1007,
+                "idleSprite": 1008,
+                "animName": "ZedIdle"
+            },
+            "302": {
+                "skinName": "画中仙",
+                "modelSprite": 1009,
+                "idleSprite": 1009,
+                "animName": "ZedSkin1Idle"
+            }
+        },
+        "weaponid": 700,
+        "weaponName": "锈蚀锁链",
+        "name": "「 废 土 魔 女 」 泽 德",
+        "barName": "泽 德",
+        "hp": 150,
+        "defense": 0,
+        "recover": 0,
+        "speed": 7,
+        "lucky": 3,
+        "range": 3,
+        "story": "英雄故事：倘若有人目睹，那么这片焦土上一定会流传起魔女泽德的故事——她狂笑着冲入怪群之中，高速旋转的巨大镰刀在空中飞舞，所及之处尽是残躯断体。但对于泽德来说，这种无聊的生活日复一日，让人厌倦。深思熟虑之后，她根据千年前里奇留给她的坐标，踏入了这片混乱时空。",
+        "character": "特性：锈蚀锁链的伤害增加基础值的50%",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "奋战在前线的先锋，以保卫人类家园为己任"
+    },
+    "Wells": {
+        "avatar": 401,
+        "sprite": {
+            "301": {
+                "skinName": "废土魔女",
+                "modelSprite": 1007,
+                "idleSprite": 1008,
+                "animName": "ZedIdle"
+            },
+            "302": {
+                "skinName": "画中仙",
+                "modelSprite": 1009,
+                "idleSprite": 1009,
+                "animName": "ZedSkin1Idle"
+            }
+        },
+        "weaponid": 700,
+        "weaponName": "锈蚀锁链",
+        "name": "「 废 土 魔 女 」 威 尔 斯",
+        "barName": "威 尔 斯",
+        "hp": 150,
+        "defense": 0,
+        "recover": 0,
+        "speed": 7,
+        "lucky": 3,
+        "range": 3,
+        "story": "英雄故事：倘若有人目睹，那么这片焦土上一定会流传起魔女泽德的故事——她狂笑着冲入怪群之中，高速旋转的巨大镰刀在空中飞舞，所及之处尽是残躯断体。但对于泽德来说，这种无聊的生活日复一日，让人厌倦。深思熟虑之后，她根据千年前里奇留给她的坐标，踏入了这片混乱时空。",
+        "character": "特性：锈蚀锁链的伤害增加基础值的50%",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "奋战在前线的先锋，以保卫人类家园为己任"
+    },
+    "Sarah": {
+        "avatar": 501,
+        "sprite": {
+            "301": {
+                "skinName": "废土魔女",
+                "modelSprite": 1007,
+                "idleSprite": 1008,
+                "animName": "ZedIdle"
+            },
+            "302": {
+                "skinName": "画中仙",
+                "modelSprite": 1009,
+                "idleSprite": 1009,
+                "animName": "ZedSkin1Idle"
+            }
+        },
+        "weaponid": 700,
+        "weaponName": "锈蚀锁链",
+        "name": "「 废 土 魔 女 」 小 莎 拉",
+        "barName": "小 莎 拉",
+        "hp": 150,
+        "defense": 0,
+        "recover": 0,
+        "speed": 7,
+        "lucky": 3,
+        "range": 3,
+        "story": "英雄故事：倘若有人目睹，那么这片焦土上一定会流传起魔女泽德的故事——她狂笑着冲入怪群之中，高速旋转的巨大镰刀在空中飞舞，所及之处尽是残躯断体。但对于泽德来说，这种无聊的生活日复一日，让人厌倦。深思熟虑之后，她根据千年前里奇留给她的坐标，踏入了这片混乱时空。",
+        "character": "特性：锈蚀锁链的伤害增加基础值的50%",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "奋战在前线的先锋，以保卫人类家园为己任"
+    },
+    "Issa": {
+        "avatar": 601,
+        "sprite": {
+            "301": {
+                "skinName": "废土魔女",
+                "modelSprite": 1007,
+                "idleSprite": 1008,
+                "animName": "ZedIdle"
+            },
+            "302": {
+                "skinName": "画中仙",
+                "modelSprite": 1009,
+                "idleSprite": 1009,
+                "animName": "ZedSkin1Idle"
+            }
+        },
+        "weaponid": 700,
+        "weaponName": "锈蚀锁链",
+        "name": "「 废 土 魔 女 」 伊 莎",
+        "barName": "伊 莎",
+        "hp": 150,
+        "defense": 0,
+        "recover": 0,
+        "speed": 7,
+        "lucky": 3,
+        "range": 3,
+        "story": "英雄故事：倘若有人目睹，那么这片焦土上一定会流传起魔女泽德的故事——她狂笑着冲入怪群之中，高速旋转的巨大镰刀在空中飞舞，所及之处尽是残躯断体。但对于泽德来说，这种无聊的生活日复一日，让人厌倦。深思熟虑之后，她根据千年前里奇留给她的坐标，踏入了这片混乱时空。",
+        "character": "特性：锈蚀锁链的伤害增加基础值的50%",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "奋战在前线的先锋，以保卫人类家园为己任"
+    },
+    "IAA": {
+        "avatar": 701,
+        "sprite": {
+            "301": {
+                "skinName": "废土魔女",
+                "modelSprite": 1007,
+                "idleSprite": 1008,
+                "animName": "ZedIdle"
+            },
+            "302": {
+                "skinName": "画中仙",
+                "modelSprite": 1009,
+                "idleSprite": 1009,
+                "animName": "ZedSkin1Idle"
+            }
+        },
+        "weaponid": 700,
+        "weaponName": "锈蚀锁链",
+        "name": "「 废 土 魔 女 」 IAA",
+        "barName": "IAA",
+        "hp": 150,
+        "defense": 0,
+        "recover": 0,
+        "speed": 7,
+        "lucky": 3,
+        "range": 3,
+        "story": "英雄故事：倘若有人目睹，那么这片焦土上一定会流传起魔女泽德的故事——她狂笑着冲入怪群之中，高速旋转的巨大镰刀在空中飞舞，所及之处尽是残躯断体。但对于泽德来说，这种无聊的生活日复一日，让人厌倦。深思熟虑之后，她根据千年前里奇留给她的坐标，踏入了这片混乱时空。",
+        "character": "特性：锈蚀锁链的伤害增加基础值的50%",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "奋战在前线的先锋，以保卫人类家园为己任"
+    },
+    "Marrionette": {
+        "avatar": 801,
+        "sprite": {
+            "301": {
+                "skinName": "废土魔女",
+                "modelSprite": 1007,
+                "idleSprite": 1008,
+                "animName": "ZedIdle"
+            },
+            "302": {
+                "skinName": "画中仙",
+                "modelSprite": 1009,
+                "idleSprite": 1009,
+                "animName": "ZedSkin1Idle"
+            }
+        },
+        "weaponid": 700,
+        "weaponName": "锈蚀锁链",
+        "name": "「 废 土 魔 女 」 薇",
+        "barName": "薇",
+        "hp": 150,
+        "defense": 0,
+        "recover": 0,
+        "speed": 7,
+        "lucky": 3,
+        "range": 3,
+        "story": "英雄故事：倘若有人目睹，那么这片焦土上一定会流传起魔女泽德的故事——她狂笑着冲入怪群之中，高速旋转的巨大镰刀在空中飞舞，所及之处尽是残躯断体。但对于泽德来说，这种无聊的生活日复一日，让人厌倦。深思熟虑之后，她根据千年前里奇留给她的坐标，踏入了这片混乱时空。",
+        "character": "特性：锈蚀锁链的伤害增加基础值的50%",
+        "isLocked": true,
+        "isActive": false,
+        "unLockInfo": "奋战在前线的先锋，以保卫人类家园为己任"
+    }
+}

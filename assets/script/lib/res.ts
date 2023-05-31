@@ -19,6 +19,10 @@ class Res {
         "json": {
             "path": "json",
             type: cc.JsonAsset
+        },
+        "heroSprite": {
+            "path": "heroSprite",
+            type: cc.SpriteFrame
         }
     }
 

@@ -16,7 +16,6 @@ export default class NewClass extends cc.Component {
     onLoad() {
         cc.director.getCollisionManager().enabled = true;
         cc.director.getPhysicsManager().enabled = true;
-
     }
 
     start() {
@@ -34,7 +33,8 @@ export default class NewClass extends cc.Component {
         }
     }
 
-    update(dt) {
+    update(dt: any) {
+        GameFunc.getTime(dt);
         GameFunc.addEnemy(this.enemyMgr);
         for (let enemy of this.enemyMgr.children) {
             let hd = cc.v2(1, 0).signAngle(
