@@ -1,3 +1,4 @@
+import { Res } from "../lib/res"
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -67,7 +68,21 @@ export default class NewClass extends cc.Component {
 
 
     start() {
-
+        let heroJson = null;
+        if (!cc.sys.localStorage.getItem("heroJson")) {
+            heroJson = Res.getRes("json", "hero").json;
+        }
+        else {
+            heroJson = JSON.parse(cc.sys.localStorage("heroJson"));
+            for (let name in heroJson) {
+                if (heroJson[name].selected) {
+                    this.node["animIdle"] = heroJson[name].sprite["selectId"].animIdle;
+                    this.node["animMove"] = heroJson[name].sprite["selectId"].animMove;
+                    break;
+                }
+            }
+        }
+        cc.sys.localStorage.setItem("heroJson", JSON.stringify(heroJson));
     }
 
     update(dt) {

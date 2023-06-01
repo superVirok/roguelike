@@ -2075,7 +2075,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "playerLucky",
+    "_name": "playerLuck",
     "_objFlags": 0,
     "_parent": {
       "__id__": 13
@@ -5607,6 +5607,16 @@
       "__id__": 1
     },
     "_enabled": true,
+    "characterBg": null,
+    "weaponBg": null,
+    "weaponName": null,
+    "heroName": null,
+    "propHpup": null,
+    "propDefence": null,
+    "propHp": null,
+    "propSpeed": null,
+    "propLuck": null,
+    "propPickRange": null,
     "_id": ""
   },
   {
