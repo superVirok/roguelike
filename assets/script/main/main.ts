@@ -19,6 +19,7 @@ export default class NewClass extends cc.Component {
     }
 
     onOpenPanelHero() {
+        this.role.getComponent(cc.Animation).stop(this.role["animIdle"]);
         Func.openPanel("panel", "panelHero");
     }
 

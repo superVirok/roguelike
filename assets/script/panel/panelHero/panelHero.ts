@@ -26,6 +26,8 @@ export default class NewClass extends cc.Component {
 
     onBack() {
         Func.closePanel(this.node);
+        let role = cc.find("Canvas/uiLayer/role");
+        role.getComponent(cc.Animation).play(role["animIdle"]);
     }
 
     closePanelUnlockInfo() {
@@ -64,44 +66,44 @@ export default class NewClass extends cc.Component {
             if (mask.active) {
                 let data = this.heroJson[name];
                 node.on(cc.Node.EventType.TOUCH_END, () => {
-                    this.openPanelUnlockInfo(data, node);
-                })
+                    this.openPanelUnlockInfo(this.heroJson[name], node);
+                }, this)
             }
             else {
-                let data = this.heroJson[name];
                 if (isActive.active) {
-                    Func.changePanel(this.panelLayer, "panel", "panelHeroProp");
                     let panelHeroProp = this.panelLayer.getChildByName("panelHeroProp");
                     let script = panelHeroProp.getComponent("panelHeroProp");
-                    script.heroInfo = data;
+                    script.heroInfo = this.heroJson[name];
                     this.curNode = node;
+                    script.curNode = this.curNode;
                 }
                 node.on(cc.Node.EventType.TOUCH_END, () => {
+                    Func.changePanel(this.panelLayer, "panel", "panelHeroProp");
                     let panelHeroProp = this.panelLayer.getChildByName("panelHeroProp");
                     let script = panelHeroProp.getComponent("panelHeroProp");
                     this.curNode.getChildByName("isActive").active = false;
                     node.getChildByName("isActive").active = true;
-                    script.heroInfo = data;
+                    script.heroInfo = this.heroJson[node["roleName"]];
                     this.curNode = node;
                     script.curNode = this.curNode;
-                })
+                }, this)
             }
         }
     }
 
     protected onEnable(): void {
-        this.heroJson = JSON.parse(cc.sys.localStorage.getItem("heroJson"));
-        this.init();
+
     }
 
     start() {
         this.panelLayer = this.node.getChildByName("panelLayer");
+        Func.changePanel(this.panelLayer, "panel", "panelHeroProp");
         if (!cc.sys.localStorage.getItem("heroJson")) {
             this.heroJson = Res.getRes("json", "hero").json;
             let hero = JSON.stringify(this.heroJson);
             cc.sys.localStorage.setItem("heroJson", hero);
         } else {
-            this.heroJson = JSON.parse(cc.sys.localStorage.getItem("heroJson")).json;
+            this.heroJson = JSON.parse(cc.sys.localStorage.getItem("heroJson"));
         }
         this.init();
     }

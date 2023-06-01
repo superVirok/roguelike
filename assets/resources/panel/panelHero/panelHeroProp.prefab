@@ -45,11 +45,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 160
+        "__id__": 162
       }
     ],
     "_prefab": {
-      "__id__": 161
+      "__id__": 163
     },
     "_opacity": 255,
     "_color": {
@@ -595,7 +595,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "playerHPup",
+    "_name": "playerHp",
     "_objFlags": 0,
     "_parent": {
       "__id__": 13
@@ -1335,7 +1335,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "playerHP",
+    "_name": "playerRecover",
     "_objFlags": 0,
     "_parent": {
       "__id__": 13
@@ -5305,10 +5305,13 @@
     "_components": [
       {
         "__id__": 158
+      },
+      {
+        "__id__": 159
       }
     ],
     "_prefab": {
-      "__id__": 159
+      "__id__": 161
     },
     "_opacity": 255,
     "_color": {
@@ -5589,6 +5592,88 @@
     "_id": ""
   },
   {
+    "__type__": "cc.Button",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 152
+    },
+    "_enabled": true,
+    "_normalMaterial": null,
+    "_grayMaterial": null,
+    "duration": 0.1,
+    "zoomScale": 1.2,
+    "clickEvents": [
+      {
+        "__id__": 160
+      }
+    ],
+    "_N$interactable": true,
+    "_N$enableAutoGrayEffect": false,
+    "_N$transition": 3,
+    "transition": 3,
+    "_N$normalColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_N$pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "_N$hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_N$disabledColor": {
+      "__type__": "cc.Color",
+      "r": 124,
+      "g": 124,
+      "b": 124,
+      "a": 255
+    },
+    "_N$normalSprite": null,
+    "_N$pressedSprite": null,
+    "pressedSprite": null,
+    "_N$hoverSprite": null,
+    "hoverSprite": null,
+    "_N$disabledSprite": null,
+    "_N$target": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 1
+    },
+    "component": "",
+    "_componentId": "dc207eAvttDT5fJUtMX697D",
+    "handler": "onChangeHero",
+    "customEventData": ""
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -5607,16 +5692,42 @@
       "__id__": 1
     },
     "_enabled": true,
-    "characterBg": null,
-    "weaponBg": null,
-    "weaponName": null,
-    "heroName": null,
-    "propHpup": null,
-    "propDefence": null,
-    "propHp": null,
-    "propSpeed": null,
-    "propLuck": null,
-    "propPickRange": null,
+    "characterBg": {
+      "__id__": 3
+    },
+    "weaponBg": {
+      "__id__": 7
+    },
+    "weaponName": {
+      "__id__": 10
+    },
+    "heroName": {
+      "__id__": 125
+    },
+    "propHp": {
+      "__id__": 42
+    },
+    "propDefence": {
+      "__id__": 31
+    },
+    "propRecover": {
+      "__id__": 42
+    },
+    "propSpeed": {
+      "__id__": 53
+    },
+    "propLuck": {
+      "__id__": 64
+    },
+    "propPickRange": {
+      "__id__": 75
+    },
+    "btnState": {
+      "__id__": 145
+    },
+    "btnChange": {
+      "__id__": 152
+    },
     "_id": ""
   },
   {

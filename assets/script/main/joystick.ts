@@ -34,7 +34,7 @@ export default class NewClass extends cc.Component {
             cc.fadeTo(0.5, 255)
         )
 
-        this.role.getComponent(cc.Animation).play("AuroraMove");
+        this.role.getComponent(cc.Animation).play(this.role["animMove"]);
     }
 
     private onTouchMove(event: cc.Touch) {
@@ -58,7 +58,7 @@ export default class NewClass extends cc.Component {
     private onTouchCancel(event: cc.Touch) {
         this.moveDir = 0;
         this.joyStick.setPosition(cc.v2(0, 0));
-        this.role.getComponent(cc.Animation).play("AuroraIdle");
+        this.role.getComponent(cc.Animation).play(this.role["animIdle"]);
         this.node.runAction(
             cc.fadeTo(0.3, 0)
         )
@@ -67,7 +67,7 @@ export default class NewClass extends cc.Component {
     private onTouchEnd(event: cc.Touch) {
         this.moveDir = 0;
         this.joyStick.setPosition(0, 0);
-        this.role.getComponent(cc.Animation).play("AuroraIdle");
+        this.role.getComponent(cc.Animation).play(this.role["animIdle"]);
         this.node.runAction(
             cc.fadeTo(0.3, 0)
         )

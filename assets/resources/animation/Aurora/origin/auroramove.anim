@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "auroramove",
+  "_name": "AuroraMove",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.38333333333333336,
@@ -12,15 +12,9 @@
       "cc.Sprite": {
         "spriteFrame": [
           {
-            "frame": -0.016666666666666666,
-            "value": {
-              "__uuid__": "6df25809-2b5a-4e0d-bd99-5754f2a2b4cb"
-            }
-          },
-          {
             "frame": 0,
             "value": {
-              "__uuid__": "9068511e-93bf-4719-867c-e2fbc8a127ed"
+              "__uuid__": "6df25809-2b5a-4e0d-bd99-5754f2a2b4cb"
             }
           },
           {

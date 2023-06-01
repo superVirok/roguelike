@@ -71,18 +71,21 @@ export default class NewClass extends cc.Component {
         let heroJson = null;
         if (!cc.sys.localStorage.getItem("heroJson")) {
             heroJson = Res.getRes("json", "hero").json;
+            cc.sys.localStorage.setItem("heroJson", JSON.stringify(heroJson));
         }
         else {
-            heroJson = JSON.parse(cc.sys.localStorage("heroJson"));
-            for (let name in heroJson) {
-                if (heroJson[name].selected) {
-                    this.node["animIdle"] = heroJson[name].sprite["selectId"].animIdle;
-                    this.node["animMove"] = heroJson[name].sprite["selectId"].animMove;
-                    break;
-                }
+            heroJson = JSON.parse(cc.sys.localStorage.getItem("heroJson"));
+        }
+        for (let name in heroJson) {
+            if (heroJson[name].selected) {
+                this.node["heroName"] = name;
+                let spriteId = heroJson[name].sprite[heroJson[name].selectId].idleSprite
+                this.node["animIdle"] = heroJson[name].sprite[heroJson[name].selectId].animIdle;
+                this.node["animMove"] = heroJson[name].sprite[heroJson[name].selectId].animMove;
+                this.node.getComponent(cc.Sprite).spriteFrame = Res.getRes("heroSprite", spriteId);
+                break;
             }
         }
-        cc.sys.localStorage.setItem("heroJson", JSON.stringify(heroJson));
     }
 
     update(dt) {

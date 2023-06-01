@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "790a5d2e-83c9-483f-b6be-e4252b7600fd",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 449,
+  "height": 568,
+  "platformSettings": {},
+  "subMetas": {
+    "The_Blind_Witch_idle_18": {
+      "ver": "1.0.4",
+      "uuid": "a0800e73-d365-48aa-8653-b1c089e50996",
+      "rawTextureUuid": "790a5d2e-83c9-483f-b6be-e4252b7600fd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 448,
+      "height": 568,
+      "rawWidth": 449,
+      "rawHeight": 568,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

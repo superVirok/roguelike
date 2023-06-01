@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "547d8f61-6244-4fc9-8c4e-e85f7a31b32c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 162,
+  "height": 404,
+  "platformSettings": {},
+  "subMetas": {
+    "Space_scientists_idle_06": {
+      "ver": "1.0.4",
+      "uuid": "0b1302e8-5508-4849-9d2a-442b23416b54",
+      "rawTextureUuid": "547d8f61-6244-4fc9-8c4e-e85f7a31b32c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 162,
+      "height": 403,
+      "rawWidth": 162,
+      "rawHeight": 404,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

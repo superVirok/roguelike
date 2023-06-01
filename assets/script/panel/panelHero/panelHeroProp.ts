@@ -22,11 +22,11 @@ export default class NewClass extends cc.Component {
     heroName: cc.Label = null;
 
     @property(cc.Label)
-    propHpup: cc.Label = null;
+    propHp: cc.Label = null;
     @property(cc.Label)
     propDefence: cc.Label = null;
     @property(cc.Label)
-    propHp: cc.Label = null;
+    propRecover: cc.Label = null;
     @property(cc.Label)
     propSpeed: cc.Label = null;
     @property(cc.Label)
@@ -40,46 +40,73 @@ export default class NewClass extends cc.Component {
     btnChange: cc.Node = null;
     // onLoad () {}
 
+    onChangeHero() {
+        for (let node of this.curNode.parent.children) {
+            node["selected"] = false;
+            this.curNode["selected"] = true;
+        }
+        this.btnState.active = true;
+        this.btnChange.active = false;
+        this.role = cc.find("Canvas/uiLayer/role");
+        let heroJson = JSON.parse(cc.sys.localStorage.getItem("heroJson"));
+        for (let name in heroJson) {
+            heroJson[name].selected = false;
+        }
+        let name = this.curNode["roleName"];
+        heroJson[name].selected = true;
+        let selectId = heroJson[name].selectId;
+        let sprite = this.role.getComponent(cc.Sprite);
+        this.scheduleOnce(() => {
+            this.role["animIdle"] = heroJson[name].sprite[selectId].animIdle;
+            this.role["animMove"] = heroJson[name].sprite[selectId].animMove;
+            this.role["spriteId"] = heroJson[name].sprite[selectId].idleSprite;
+            sprite.spriteFrame = Res.getRes("heroSprite", heroJson[name].sprite[selectId].idleSprite)
+        })
+        cc.sys.localStorage.setItem("heroJson", JSON.stringify(heroJson));
+    }
+
     onManage() {
         let panelLayer = cc.find("Canvas/panelLayer/panelHero/panelLayer");
         Func.changePanel(panelLayer, "panel", "panelHeroInfo");
+        let panelHeroInfo = panelLayer.getChildByName("panelHeroInfo");
+        let script = panelHeroInfo.getComponent("panelHeroInfo");
+        script.heroInfo = this.heroInfo;
+        script.curNode = this.curNode;
     }
 
     onChangeSkin() {
         let panelLayer = cc.find("Canvas/panelLayer/panelHero/panelLayer");
         Func.changePanel(panelLayer, "panel", "panelHeroSkin");
+        let panelHeroSkin = panelLayer.getChildByName("panelHeroSkin");
+        let script = panelHeroSkin.getComponent("panelHeroSkin");
+        script.heroInfo = this.heroInfo;
+        script.curNode = this.curNode;
     }
 
     protected onEnable(): void {
-        this.characterBg.spriteFrame = Res.getRes("heroSprite", this.heroInfo["defaultBg"]);
-        this.weaponBg.spriteFrame = Res.getRes("heroSprite", this.heroInfo["weaponid"]);
-        this.weaponName.string = this.heroInfo["weaponName"];
-        this.heroName.string = this.heroInfo["name"];
-        this.propHp.string = this.heroInfo["hp"];
-        this.propLuck.string = this.heroInfo["luck"];
-        this.propHpup.string = this.heroInfo["recover"];
-        this.propDefence.string = this.heroInfo["defence"];
-        this.propSpeed.string = this.heroInfo["speed"];
-        this.propPickRange.string = this.heroInfo["range"];
-        if (this.curNode["selected"]) {
-            this.btnState.active = true;
-            this.btnChange.active = false;
-        } else {
-            this.btnState.active = false;
-            this.btnChange.active = true;
-        }
+        this.scheduleOnce(() => {
+            this.characterBg.spriteFrame = Res.getRes("heroSprite", this.heroInfo["defaultBg"]);
+            this.weaponBg.spriteFrame = Res.getRes("weaponSprite", this.heroInfo["weaponid"]);
+            this.weaponName.string = this.heroInfo["weaponName"];
+            this.heroName.string = this.heroInfo["name"];
+            this.propHp.string = this.heroInfo["hp"];
+            this.propLuck.string = this.heroInfo["luck"];
+            this.propRecover.string = this.heroInfo["recover"];
+            this.propDefence.string = this.heroInfo["defence"];
+            this.propSpeed.string = this.heroInfo["speed"];
+            this.propPickRange.string = this.heroInfo["range"];
+            if (this.curNode["selected"]) {
+                this.btnState.active = true;
+                this.btnChange.active = false;
+            } else {
+                this.btnState.active = false;
+                this.btnChange.active = true;
+            }
+        })
     }
 
     start() {
-        this.role = cc.find("Canvas/uiLayer/role");
-        let heroJson = JSON.parse(cc.sys.localStorage.getItem("heroJson"));
-        this.btnChange.on(cc.Node.EventType.TOUCH_END, () => {
-            for (let name in heroJson) {
-                heroJson[name].selected = false;
-            }
-            heroJson[this.curNode["roleName"]].selected = true;
-            cc.sys.localStorage.setItem("heroJson", JSON.stringify(heroJson));
-        })
+
     }
 
     // update (dt) {}

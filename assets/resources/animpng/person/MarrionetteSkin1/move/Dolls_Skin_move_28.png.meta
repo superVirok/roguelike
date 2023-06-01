@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "30ec8c95-dee4-4a91-9a04-2c2d461530b8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 226,
+  "height": 376,
+  "platformSettings": {},
+  "subMetas": {
+    "Dolls_Skin_move_28": {
+      "ver": "1.0.4",
+      "uuid": "adc8771d-d1d3-426d-b1ad-c6576315e8d4",
+      "rawTextureUuid": "30ec8c95-dee4-4a91-9a04-2c2d461530b8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 0,
+      "width": 222,
+      "height": 376,
+      "rawWidth": 226,
+      "rawHeight": 376,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

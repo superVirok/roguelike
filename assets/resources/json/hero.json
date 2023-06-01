@@ -18,12 +18,12 @@
                 "animMove": "AuroraSkin1Move"
             }
         },
-        "weaponid": 100,
+        "weaponid": 101,
         "weaponName": "圣光之枪",
         "name": "「 前 天 使 长 」 奥 罗 拉",
         "barName": "奥 罗 拉",
         "hp": 120,
-        "defense": 5,
+        "defence": 5,
         "recover": 0,
         "speed": 5,
         "luck": 1,
@@ -56,12 +56,12 @@
                 "animMove": "OctopusSkin1Move"
             }
         },
-        "weaponid": 101,
+        "weaponid": 201,
         "weaponName": "沼泽宠物",
         "name": "「 渊 沼 学 者」 艾 西 亚",
         "barName": "艾 西 亚",
         "hp": 100,
-        "defense": 2,
+        "defence": 2,
         "recover": 2,
         "speed": 4,
         "luck": 6,
@@ -94,12 +94,12 @@
                 "animMove": "ZedSkin1Move"
             }
         },
-        "weaponid": 102,
+        "weaponid": 301,
         "weaponName": "锈蚀锁链",
         "name": "「 废 土 魔 女 」 泽 德",
         "barName": "泽 德",
         "hp": 150,
-        "defense": 0,
+        "defence": 0,
         "recover": 0,
         "speed": 7,
         "luck": 3,
@@ -115,29 +115,29 @@
     },
     "Wells": {
         "avatar": 401,
-        "defaultBg": 1007,
+        "defaultBg": 1010,
         "sprite": {
             "401": {
                 "skinName": "末世猎人",
-                "modelSprite": 1007,
-                "idleSprite": 1008,
+                "modelSprite": 1010,
+                "idleSprite": 1011,
                 "animIdle": "ZedIdle",
                 "animMove": "ZedMove"
             },
             "402": {
                 "skinName": "画中仙",
-                "modelSprite": 1009,
-                "idleSprite": 1009,
+                "modelSprite": 1012,
+                "idleSprite": 1012,
                 "animIdle": "ZedSkin1Idle",
                 "animMove": "ZedSkin1Move"
             }
         },
-        "weaponid": 103,
+        "weaponid": 401,
         "weaponName": "双管猎炮",
         "name": "「 末 世 猎人 」 威 尔 斯",
         "barName": "威 尔 斯",
         "hp": 150,
-        "defense": 0,
+        "defence": 0,
         "recover": 0,
         "speed": 7,
         "luck": 3,
@@ -153,29 +153,29 @@
     },
     "Sarah": {
         "avatar": 501,
-        "defaultBg": 1007,
+        "defaultBg": 1013,
         "sprite": {
             "501": {
                 "skinName": "满分忍者",
-                "modelSprite": 1007,
-                "idleSprite": 1008,
+                "modelSprite": 1013,
+                "idleSprite": 1014,
                 "animIdle": "ZedIdle",
                 "animMove": "ZedMove"
             },
             "502": {
                 "skinName": "画中仙",
-                "modelSprite": 1009,
-                "idleSprite": 1009,
+                "modelSprite": 1015,
+                "idleSprite": 1015,
                 "animIdle": "ZedSkin1Idle",
                 "animMove": "ZedSkin1Move"
             }
         },
-        "weaponid": 104,
+        "weaponid": 501,
         "weaponName": "一字刀",
         "name": "「 满 分 忍 者 」 小 莎 拉",
         "barName": "小 莎 拉",
         "hp": 150,
-        "defense": 0,
+        "defence": 0,
         "recover": 0,
         "speed": 7,
         "luck": 3,
@@ -191,29 +191,22 @@
     },
     "Issa": {
         "avatar": 601,
-        "defaultBg": 1007,
+        "defaultBg": 1016,
         "sprite": {
             "601": {
                 "skinName": "盲眼女巫",
-                "modelSprite": 1007,
-                "idleSprite": 1008,
+                "modelSprite": 1016,
+                "idleSprite": 1017,
                 "animIdle": "ZedIdle",
                 "animMove": "ZedMove"
-            },
-            "602": {
-                "skinName": "画中仙",
-                "modelSprite": 1009,
-                "idleSprite": 1009,
-                "animIdle": "ZedSkin1Idle",
-                "animMove": "ZedSkin1Move"
             }
         },
-        "weaponid": 105,
+        "weaponid": 601,
         "weaponName": "萤火虫",
         "name": "「 盲 眼 女 巫 」 伊 莎",
         "barName": "伊 莎",
         "hp": 150,
-        "defense": 0,
+        "defence": 0,
         "recover": 0,
         "speed": 7,
         "luck": 3,
@@ -229,29 +222,29 @@
     },
     "IAA": {
         "avatar": 701,
-        "defaultBg": 1007,
+        "defaultBg": 1018,
         "sprite": {
             "701": {
                 "skinName": "太空科学家",
-                "modelSprite": 1007,
-                "idleSprite": 1008,
+                "modelSprite": 1018,
+                "idleSprite": 1019,
                 "animIdle": "ZedIdle",
                 "animMove": "ZedMove"
             },
             "702": {
                 "skinName": "画中仙",
-                "modelSprite": 1009,
-                "idleSprite": 1009,
+                "modelSprite": 1020,
+                "idleSprite": 1020,
                 "animIdle": "ZedSkin1Idle",
                 "animMove": "ZedSkin1Move"
             }
         },
-        "weaponid": 106,
+        "weaponid": 701,
         "weaponName": "电弧发生器",
         "name": "「 太 空 科 学 家 」 IAA",
         "barName": "IAA",
         "hp": 150,
-        "defense": 0,
+        "defence": 0,
         "recover": 0,
         "speed": 7,
         "luck": 3,
@@ -267,29 +260,29 @@
     },
     "Marrionette": {
         "avatar": 801,
-        "defaultBg": 1007,
+        "defaultBg": 1021,
         "sprite": {
             "801": {
                 "skinName": "人偶少年",
-                "modelSprite": 1007,
-                "idleSprite": 1008,
+                "modelSprite": 1021,
+                "idleSprite": 1022,
                 "animIdle": "ZedIdle",
                 "animMove": "ZedMove"
             },
             "802": {
                 "skinName": "画中仙",
-                "modelSprite": 1009,
-                "idleSprite": 1009,
+                "modelSprite": 1023,
+                "idleSprite": 1023,
                 "animIdle": "ZedSkin1Idle",
                 "animMove": "ZedSkin1Move"
             }
         },
-        "weaponid": 107,
+        "weaponid": 801,
         "weaponName": "风杖",
         "name": "「 人 偶 少 女 」 薇",
         "barName": "薇",
         "hp": 150,
-        "defense": 0,
+        "defence": 0,
         "recover": 0,
         "speed": 7,
         "luck": 3,

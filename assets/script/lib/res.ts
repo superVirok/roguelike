@@ -23,6 +23,10 @@ class Res {
         "heroSprite": {
             "path": "heroSprite",
             type: cc.SpriteFrame
+        },
+        "weaponSprite": {
+            "path": "weaponSprite",
+            type: cc.SpriteFrame
         }
     }
 
