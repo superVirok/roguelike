@@ -22,7 +22,40 @@ export default class NewClass extends cc.Component {
 
     curNode: any = null;
 
+    lockNode: any = null;
+
+    price: number = 0;
+
+
+    accountJson: any = null;
     // onLoad () {}
+
+    onBuyHero() {
+        cc.log(this.price, this.accountJson)
+        if (this.price > this.accountJson["coinNum"]) {
+            return;
+        }
+        else {
+            this.closePanelUnlockInfo();
+            this.accountJson["coinNum"] -= this.price;
+            this.heroJson[this.lockNode["roleName"]].isLocked = false;
+            this.lockNode.getChildByName("mask").active = false;
+            this.lockNode.getChildByName("isLocked").active = false;
+            cc.sys.localStorage.setItem("account", JSON.stringify(this.accountJson));
+            cc.sys.localStorage.setItem("heroJson", JSON.stringify(this.heroJson));
+            this.lockNode.targetOff(cc.Node.EventType.TOUCH_START);
+            this.lockNode.on(cc.Node.EventType.TOUCH_END, () => {
+                Func.changePanel(this.panelLayer, "panel", "panelHeroProp");
+                let panelHeroProp = this.panelLayer.getChildByName("panelHeroProp");
+                let script = panelHeroProp.getComponent("panelHeroProp");
+                this.curNode.getChildByName("isActive").active = false;
+                this.lockNode.getChildByName("isActive").active = true;
+                script.heroInfo = this.heroJson[this.lockNode["roleName"]];
+                this.curNode = this.lockNode;
+                script.curNode = this.curNode;
+            }, this)
+        }
+    }
 
     onBack() {
         Func.closePanel(this.node);
@@ -42,6 +75,10 @@ export default class NewClass extends cc.Component {
         heroName.string = hero["name"];
         let heroInfo = this.panelUnlockInfo.getChildByName("heroInfo").getComponent(cc.Label);
         heroInfo.string = hero["unLockInfo"];
+        let coinNum = this.panelUnlockInfo.getChildByName("btnUnlock").getChildByName("numLabel").getComponent(cc.Label);
+        coinNum.string = this.heroJson[node["roleName"]].price;
+        this.lockNode = node;
+        this.price = this.heroJson[node["roleName"]].price;
     }
     init() {
         for (let name in this.heroJson) {
@@ -62,10 +99,9 @@ export default class NewClass extends cc.Component {
             node.active = true;
             node["roleName"] = name;
             node["selected"] = this.heroJson[name].selected;
-            node["selectedId"] = this.heroJson[name].selectedId;
+            node["selectId"] = this.heroJson[name].selectId;
             if (mask.active) {
-                let data = this.heroJson[name];
-                node.on(cc.Node.EventType.TOUCH_END, () => {
+                node.on(cc.Node.EventType.TOUCH_START, () => {
                     this.openPanelUnlockInfo(this.heroJson[name], node);
                 }, this)
             }
@@ -98,6 +134,7 @@ export default class NewClass extends cc.Component {
     start() {
         this.panelLayer = this.node.getChildByName("panelLayer");
         Func.changePanel(this.panelLayer, "panel", "panelHeroProp");
+        this.accountJson = JSON.parse(cc.sys.localStorage.getItem("account"))
         if (!cc.sys.localStorage.getItem("heroJson")) {
             this.heroJson = Res.getRes("json", "hero").json;
             let hero = JSON.stringify(this.heroJson);

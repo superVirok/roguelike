@@ -4,18 +4,22 @@
         "defaultBg": 1001,
         "sprite": {
             "101": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『前 天 使 长』奥 罗 拉</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>前 天 使 长</size></c></outline>",
                 "skinName": "前天使长",
                 "modelSprite": 1001,
                 "idleSprite": 1002,
                 "animIdle": "AuroraIdle",
-                "animMove": "AuroraMove"
+                "animMove": "AuroraMove",
+                "avail": true
             },
             "102": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『堕 天 使』奥 罗 拉</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>堕 天 使</size></c></outline>",
                 "skinName": "堕天使",
                 "modelSprite": 1003,
                 "idleSprite": 1003,
                 "animIdle": "AuroraSkin1Idle",
-                "animMove": "AuroraSkin1Move"
+                "animMove": "AuroraSkin1Move",
+                "avail": true
             }
         },
         "weaponid": 101,
@@ -35,25 +39,30 @@
         "unLockInfo": "勇敢无畏的大天使长，为了守护人类的家园奋战在前线",
         "selected": true,
         "selectId": "101",
-        "defaultRole": true
+        "defaultRole": true,
+        "price": 0
     },
     "Aisia": {
         "avatar": 201,
         "defaultBg": 1004,
         "sprite": {
             "201": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『渊 沼 学 者』艾 西 亚</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>渊 沼 学 者</size></c></outline>",
                 "skinName": "渊沼学者",
                 "modelSprite": 1004,
                 "idleSprite": 1005,
                 "animIdle": "OctopusIdle",
-                "animMove": "OctopusMove"
+                "animMove": "OctopusMove",
+                "avail": true
             },
             "202": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『古 神 偶 像』艾 西 亚</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>古 神 偶 像</size></c></outline>",
                 "skinName": "古神偶像",
                 "modelSprite": 1006,
                 "idleSprite": 1006,
                 "animIdle": "OctopusSkin1Idle",
-                "animMove": "OctopusSkin1Move"
+                "animMove": "OctopusSkin1Move",
+                "avail": true
             }
         },
         "weaponid": 201,
@@ -73,25 +82,30 @@
         "unLockInfo": "沼泽的生态学者，反抗人类的殖民侵略",
         "selected": false,
         "selectId": "201",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 2000
     },
     "Scythe": {
         "avatar": 301,
         "defaultBg": 1007,
         "sprite": {
             "301": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『废 土 魔 女』泽 德</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>废 土 魔 女</size></c></outline>",
                 "skinName": "废土魔女",
                 "modelSprite": 1007,
                 "idleSprite": 1008,
                 "animIdle": "ZedIdle",
-                "animMove": "ZedMove"
+                "animMove": "ZedMove",
+                "avail": true
             },
             "302": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『画 中 仙』泽 德</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>画 中 仙</size></c></outline>",
                 "skinName": "画中仙",
                 "modelSprite": 1009,
                 "idleSprite": 1009,
                 "animIdle": "ZedSkin1Idle",
-                "animMove": "ZedSkin1Move"
+                "animMove": "ZedSkin1Move",
+                "avail": true
             }
         },
         "weaponid": 301,
@@ -111,25 +125,30 @@
         "unLockInfo": "不曾衰老的战斗魔女，焦土之上的恐怖传说",
         "selected": false,
         "selectId": "301",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 50000
     },
     "Wells": {
         "avatar": 401,
         "defaultBg": 1010,
         "sprite": {
             "401": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『末 世 猎 人』威 尔 斯</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>末 世 猎 人</size></c></outline>",
                 "skinName": "末世猎人",
                 "modelSprite": 1010,
                 "idleSprite": 1011,
-                "animIdle": "ZedIdle",
-                "animMove": "ZedMove"
+                "animIdle": "WellsIdle",
+                "animMove": "WellsMove",
+                "avail": true
             },
             "402": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『末 世 猎 人』威 尔 斯</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>末 世 猎 人</size></c></outline>",
                 "skinName": "画中仙",
                 "modelSprite": 1012,
                 "idleSprite": 1012,
-                "animIdle": "ZedSkin1Idle",
-                "animMove": "ZedSkin1Move"
+                "animIdle": "WellsSkin1Idle",
+                "animMove": "WellsSkin1Move",
+                "avail": true
             }
         },
         "weaponid": 401,
@@ -149,25 +168,30 @@
         "unLockInfo": "骁勇善战的采补队长，狩猎变异生物的人类尖兵",
         "selected": false,
         "selectId": "401",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 70000
     },
     "Sarah": {
         "avatar": 501,
         "defaultBg": 1013,
         "sprite": {
             "501": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『满 分 忍 者』小 莎 拉</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>满 分 忍 者</size></c></outline>",
                 "skinName": "满分忍者",
                 "modelSprite": 1013,
                 "idleSprite": 1014,
-                "animIdle": "ZedIdle",
-                "animMove": "ZedMove"
+                "animIdle": "SarahIdle",
+                "animMove": "SarahMove",
+                "avail": true
             },
             "502": {
-                "skinName": "画中仙",
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『满 分 忍 者』小 莎 拉</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>满 分 忍 者</size></c></outline>",
+                "skinName": "满分忍者",
                 "modelSprite": 1015,
                 "idleSprite": 1015,
-                "animIdle": "ZedSkin1Idle",
-                "animMove": "ZedSkin1Move"
+                "animIdle": "SarahSkin1Idle",
+                "animMove": "SarahSkin1Move",
+                "avail": true
             }
         },
         "weaponid": 501,
@@ -187,18 +211,21 @@
         "unLockInfo": "勇敢而又出色的小忍者，陨落在崩坏的童话世界之中",
         "selected": false,
         "selectId": "501",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 90000
     },
     "Issa": {
         "avatar": 601,
         "defaultBg": 1016,
         "sprite": {
             "601": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『盲 眼 女 巫』伊 莎</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>盲 眼 女 巫</size></c></outline>",
                 "skinName": "盲眼女巫",
                 "modelSprite": 1016,
                 "idleSprite": 1017,
-                "animIdle": "ZedIdle",
-                "animMove": "ZedMove"
+                "animIdle": "IssaIdle",
+                "animMove": "IssaMove",
+                "avail": true
             }
         },
         "weaponid": 601,
@@ -218,25 +245,30 @@
         "unLockInfo": "祈求光芒的盲眼女巫，背负里世界的罪孽前行",
         "selected": false,
         "selectId": "601",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 100000
     },
     "IAA": {
         "avatar": 701,
         "defaultBg": 1018,
         "sprite": {
             "701": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『太 空 科 学 家』IAA</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>太 空 科 学 家</size></c></outline>",
                 "skinName": "太空科学家",
                 "modelSprite": 1018,
                 "idleSprite": 1019,
-                "animIdle": "ZedIdle",
-                "animMove": "ZedMove"
+                "animIdle": "IAAIdle",
+                "animMove": "IAAMove",
+                "avail": true
             },
             "702": {
-                "skinName": "画中仙",
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『太 空 科 学 家』IAA</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>太 空 科 学 家</size></c></outline>",
+                "skinName": "太空科学家",
                 "modelSprite": 1020,
                 "idleSprite": 1020,
-                "animIdle": "ZedSkin1Idle",
-                "animMove": "ZedSkin1Move"
+                "animIdle": "IAASkin1Idle",
+                "animMove": "IAASkin1Move",
+                "avail": true
             }
         },
         "weaponid": 701,
@@ -256,25 +288,30 @@
         "unLockInfo": "守卫文明火种的研究员，在基地陷落时结束了自己的生命",
         "selected": false,
         "selectId": "701",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 120000
     },
-    "Marrionette": {
+    "Marionette": {
         "avatar": 801,
         "defaultBg": 1021,
         "sprite": {
             "801": {
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『人 偶 少 年』薇</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>人 偶 少 年</size></c></outline>",
                 "skinName": "人偶少年",
                 "modelSprite": 1021,
                 "idleSprite": 1022,
-                "animIdle": "ZedIdle",
-                "animMove": "ZedMove"
+                "animIdle": "MarionetteIdle",
+                "animMove": "MarionetteMove",
+                "avail": true
             },
             "802": {
-                "skinName": "画中仙",
+                "skinInfo": "<outline color=#918787 width=2> <color=#FFFFFF>『人 偶 少 年』薇</c></outline><br/><color=#0fffff><outline color=#918787 width=2> <color=#FFFFFF><size = 17>皮 肤</size></c></outline></color> <outline color = #B4BB16 width=1><color=#B4BB16><size = 17>人 偶 少 年</size></c></outline>",
+                "skinName": "人偶少年",
                 "modelSprite": 1023,
                 "idleSprite": 1023,
-                "animIdle": "ZedSkin1Idle",
-                "animMove": "ZedSkin1Move"
+                "animIdle": "MarionetteSkin1Idle",
+                "animMove": "MarionetteSkin1Move",
+                "avail": true
             }
         },
         "weaponid": 801,
@@ -294,6 +331,7 @@
         "unLockInfo": "被商人「里奇」带回来的魔法人偶，是一具没有灵魂的躯壳",
         "selected": false,
         "selectId": "801",
-        "defaultRole": false
+        "defaultRole": false,
+        "price": 150000
     }
 }

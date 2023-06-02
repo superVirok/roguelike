@@ -12,7 +12,13 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     pubmain: cc.Node = null;
 
+    @property(cc.Label)
+    coin: cc.Label = null;
 
+    @property(cc.Label)
+    eyeBall: cc.Label = null;
+
+    accountJson: any = null;
 
     onOpenPanelShop() {
         Func.openPanel("panel", "panelShop");
@@ -44,6 +50,11 @@ export default class NewClass extends cc.Component {
 
     }
 
+    onEnable() {
+        this.accountJson = JSON.parse(cc.sys.localStorage.getItem("account"));
+        this.coin.string = this.accountJson["coinNum"];
+        this.eyeBall.string = this.accountJson["eyeBall"];
+    }
 
 
     // LIFE-CYCLE CALLBACKS:
@@ -84,6 +95,9 @@ export default class NewClass extends cc.Component {
         for (let child of uiLayer.children) {
             child.zIndex = -child.y;
         }
+        this.accountJson = JSON.parse(cc.sys.localStorage.getItem("account"));
+        this.coin.string = this.accountJson["coin"];
+        this.eyeBall.string = this.accountJson["eyeBall"];
 
     }
 

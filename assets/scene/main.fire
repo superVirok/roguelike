@@ -34199,7 +34199,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "4316f77f-63e4-432d-861b-d907634a1662"
+      "__uuid__": "eabfcd7d-6916-40f4-a588-571bc5623216"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -34223,15 +34223,10 @@
       "__id__": 6
     },
     "_enabled": true,
-    "_defaultClip": {
-      "__uuid__": "a5364902-a094-4e79-9554-fe441e9978d8"
-    },
+    "_defaultClip": null,
     "_clips": [
       {
         "__uuid__": "4ebaf9dd-d184-4cb8-8ebf-d0fa38714014"
-      },
-      {
-        "__uuid__": "a5364902-a094-4e79-9554-fe441e9978d8"
       },
       {
         "__uuid__": "d8b06e79-bdc6-4d40-8ae0-85dbe814e896"
@@ -34310,6 +34305,12 @@
       },
       {
         "__uuid__": "e360f81c-7be8-48ec-99d9-449ea16d21f1"
+      },
+      {
+        "__uuid__": "81c5c0cc-eb39-48a8-8106-fc5c6c0df31b"
+      },
+      {
+        "__uuid__": "a5364902-a094-4e79-9554-fe441e9978d8"
       }
     ],
     "playOnLoad": true,
@@ -43594,6 +43595,12 @@
     },
     "pubmain": {
       "__id__": 805
+    },
+    "coin": {
+      "__id__": 893
+    },
+    "eyeBall": {
+      "__id__": 888
     },
     "_id": "2cCGRxJvxJhoRrvW1vuov9"
   }
