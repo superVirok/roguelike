@@ -17,6 +17,7 @@ export default class NewClass extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
 
+
     // onLoad () {}
 
     start() {
@@ -34,22 +35,28 @@ export default class NewClass extends cc.Component {
                 let spriteId = heroJson[name].sprite[heroJson[name].selectId].idleSprite;
                 this.node["animIdle"] = heroJson[name].sprite[heroJson[name].selectId].animIdle;
                 this.node["animMove"] = heroJson[name].sprite[heroJson[name].selectId].animMove;
+                this.node["maxHp"] = heroJson[this.node["heroName"]].hp;
+                this.node["curHp"] = heroJson[this.node["heroName"]].hp;
+                this.node["speed"] = heroJson[this.node["heroName"]].speed;
+                this.node["defence"] = heroJson[this.node["heroName"]].defence;
+                this.node["recover"] = heroJson[this.node["heroName"]].recover;
+                this.node["weaponId"] = heroJson[this.node["heroName"]].weaponId;
+                this.node["weaponName"] = heroJson[this.node["heroName"]].weaponName;
                 this.node.getComponent(cc.Sprite).spriteFrame = Res.getRes("heroSprite", spriteId);
                 break;
             }
         }
-        this.curHp = this.maxHp = heroJson[this.node["heroName"]].hp;
-        this.defence = heroJson[this.node["heroName"]].defence;
-        this.recover = heroJson[this.node["heroName"]].recover;
-        this.hpLabel.string = this.curHp + "/" + this.maxHp;
-        this.hpProgress.progress = this.curHp / this.maxHp;
+        this.hpLabel.string = this.node["curHp"] + "/" + this.node["maxHp"];
+        this.hpProgress.progress = this.node["curHp"] / this.node["maxHp"];
 
 
     }
 
     update(dt) {
-        if (this.curHp + this.recover <= this.maxHp) {
-            this.curHp += this.recover;
+        if (this.node["curHp"] + this.node["recover"] <= this.node["maxHp"]) {
+            this.node["curHp"] += this.node["recover"];
         }
+        this.hpLabel.string = this.node["curHp"] + "/" + this.node["maxHp"];
+        this.hpProgress.progress = this.node["curHp"] / this.node["maxHp"];
     }
 }

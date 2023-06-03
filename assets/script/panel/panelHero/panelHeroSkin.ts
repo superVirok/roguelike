@@ -161,18 +161,6 @@ export default class NewClass extends cc.Component {
     }
     // onLoad () {}
 
-    protected onEnable(): void {
-        if (this.curSkinNode) {
-            this.scheduleOnce(() => {
-                // for (let node of this.curSkinNode.parent.children) {
-                //     if (this.curNode["roleName"] == node["roleName"]) {
-
-                //     }     
-                // }
-            })
-        }
-    }
-
     start() {
         if (!cc.sys.localStorage.getItem("heroJson")) {
             this.heroJson = Res.getRes("json", "hero").json;

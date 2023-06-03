@@ -2,56 +2,76 @@
     "enemy1": {
         "name": "enemy1",
         "maxHp": 100,
-        "hurt": 60
+        "hurt": 10,
+        "range": 30,
+        "expId": "exp0"
     },
     "enemy2": {
         "name": "enemy2",
         "maxHp": 150,
-        "hurt": 65
+        "hurt": 10,
+        "range": 35,
+        "expId": "exp0"
     },
     "enemy3": {
         "name": "enemy3",
         "maxHp": 200,
-        "hurt": 75
+        "hurt": 12,
+        "range": 40,
+        "expId": "exp0"
     },
     "enemy4": {
         "name": "enemy4",
         "maxHp": 250,
-        "hurt": 80
+        "hurt": 12,
+        "range": 45,
+        "expId": "exp1"
     },
     "enemy5": {
         "name": "enemy5",
         "maxHp": 250,
-        "hurt": 85
+        "hurt": 15,
+        "range": 50,
+        "expId": "exp1"
     },
     "enemy6": {
         "name": "enemy6",
         "maxHp": 300,
-        "hurt": 90
+        "hurt": 15,
+        "range": 55,
+        "expId": "exp1"
     },
     "enemy7": {
         "name": "enemy7",
         "maxHp": 400,
-        "hurt": 100
+        "hurt": 18,
+        "range": 60,
+        "expId": "exp1"
     },
     "enemy8": {
         "name": "enemy8",
         "maxHp": 550,
-        "hurt": 100
+        "hurt": 18,
+        "range": 65,
+        "expId": "exp2"
     },
     "enemy9": {
         "name": "enemy9",
         "maxHp": 750,
-        "hurt": 110
+        "hurt": 70,
+        "expId": "exp2"
     },
     "enemy10": {
         "name": "enemy10",
         "maxHp": 1000,
-        "hurt": 120
+        "hurt": 75,
+        "expId": "exp2"
     },
-    "enemy11": {
-        "name": "enemy10",
+    "boss": {
+        "name": "boss",
         "maxHp": 1200,
-        "hurt": 200
+        "hurt": 200,
+        "duration": 2,
+        "expId": "exp2"
     }
 }

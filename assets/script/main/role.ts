@@ -79,6 +79,7 @@ export default class NewClass extends cc.Component {
         for (let name in heroJson) {
             if (heroJson[name].selected) {
                 this.node["heroName"] = name;
+                this.node["speed"] = heroJson[this.node["heroName"]].speed;
                 let spriteId = heroJson[name].sprite[heroJson[name].selectId].idleSprite
                 this.node["animIdle"] = heroJson[name].sprite[heroJson[name].selectId].animIdle;
                 this.node["animMove"] = heroJson[name].sprite[heroJson[name].selectId].animMove;

@@ -267,7 +267,7 @@
       "__id__": 2
     },
     "_enabled": true,
-    "tag": 52,
+    "tag": 53,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 30,
@@ -812,7 +812,7 @@
       "__id__": 21
     },
     "_enabled": true,
-    "tag": 52,
+    "tag": 53,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 30,
@@ -1332,7 +1332,7 @@
       "__id__": 39
     },
     "_enabled": true,
-    "tag": 52,
+    "tag": 53,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 30,
@@ -1852,7 +1852,7 @@
       "__id__": 57
     },
     "_enabled": true,
-    "tag": 52,
+    "tag": 53,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 30,

@@ -1,9 +1,4 @@
 {
     "coinNum": 50000,
-    "eyeBall": 0,
-    "curRole": {
-        "name": "aurora",
-        "maxHp": 500,
-        "hurt": 100
-    }
+    "eyeBall": 0
 }

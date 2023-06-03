@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "b06f7ef8-3266-427a-98b7-b1eda77c68a6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 347,
+  "height": 196,
+  "platformSettings": {},
+  "subMetas": {
+    "red rage glass-attack_08": {
+      "ver": "1.0.4",
+      "uuid": "74ea32db-7d3f-4005-bdde-3f30ec72494f",
+      "rawTextureUuid": "b06f7ef8-3266-427a-98b7-b1eda77c68a6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 343,
+      "height": 191,
+      "rawWidth": 347,
+      "rawHeight": 196,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

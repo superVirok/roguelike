@@ -35,10 +35,6 @@ export default class NewClass extends cc.Component {
         else {
             this.node.getComponent(cc.RigidBody).linearVelocity =
                 cc.v2(Math.cos(this.node["atkDir"]) * 500, Math.sin(this.node["atkDir"]) * 500);
-
-            for (let child of this.node.children) {
-                cc.log(child.angle, "+-----++++++++++++++++++++", this.node.angle)
-            }
             return;
         }
 

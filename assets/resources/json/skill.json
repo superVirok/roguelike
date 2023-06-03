@@ -3,18 +3,48 @@
         "name": "skillHolyLight0",
         "cd": 2,
         "hurt": 50,
-        "duration": 5
+        "duration": 5,
+        "5": {
+            "name": "skillHolyLight1",
+            "cd": 5,
+            "hurt": 500,
+            "duration": 7
+        },
+        "6": {
+            "name": "skillHolyLight2",
+            "cd": 5,
+            "hurt": 500,
+            "duration": 7
+        }
     },
-    "skillHolyLight1": {
-        "name": "skillHolyLight1",
-        "cd": 5,
-        "hurt": 500,
-        "duration": 7
+    "skillSwampPet0": {
+        "name": "skillSwampPet0",
+        "cd": 2,
+        "hurt": 50,
+        "duration": 5,
+        "5": {
+            "name": "skillSwampPet1",
+            "cd": 5,
+            "hurt": 500,
+            "duration": 7
+        }
     },
-    "skillHolyLight2": {
-        "name": "skillHolyLight2",
-        "cd": 5,
-        "hurt": 500,
-        "duration": 7
+    "skillEngineOil0": {
+        "name": "skillEngineOil0",
+        "cd": 0.5,
+        "hurt": 50,
+        "duration": 2,
+        "6": {
+            "name": "skillEngineOil1",
+            "cd": 5,
+            "hurt": 500,
+            "duration": 7
+        }
+    },
+    "skillKatana0": {
+        "name": "skillKatana0",
+        "cd": 3,
+        "hurt": 50,
+        "duration": 2
     }
 }
