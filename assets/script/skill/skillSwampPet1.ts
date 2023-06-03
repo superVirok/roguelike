@@ -1,7 +1,5 @@
 import { Res } from "../lib/res"
-class skillSwampPet1 {
-    private static atkDir: any = null;
-
+class SkillSwampPet1 {
     static play(role: cc.Node, skillTime: number) {
         let skillNode = cc.instantiate(Res.getRes("weapon", "swampPet1"));
         skillNode.x = role.x;
@@ -20,4 +18,4 @@ class skillSwampPet1 {
     }
 }
 
-export { skillSwampPet1 }
+export { SkillSwampPet1 }

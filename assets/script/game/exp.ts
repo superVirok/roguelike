@@ -9,11 +9,18 @@ export default class NewClass extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
     exp: number = 0;
     // onLoad () {}
-    onCollisonEnter(other: any, self: any) {
+    onCollisionEnter(other: any, self: any) {
         if (other.tag == 0) {
-            //加经验值
+            this.node.runAction(
+                cc.sequence(
+                    cc.moveBy(0.3, 0, 50),
+                    cc.callFunc(() => {
+                        //加经验值
 
-            this.node.destroy();
+                        this.node.destroy();
+                    })
+                )
+            )
         }
     }
 

@@ -28,6 +28,34 @@ export default class NewClass extends cc.Component {
     update(dt) {
         this.skillMgr.x = this.role.x;
         this.skillMgr.y = this.role.y;
+        if (this.node.name == "engineOil0") {
+            return;
+        }
+
+
+        if (this.enemyMgr.children.length > 0) {
+            for (let enemy of this.enemyMgr.children) {
+                if (enemy.isValid) {
+                    let z = Math.pow(
+                        Math.pow(enemy.x + this.enemyMgr.x - this.role.x, 2) +
+                        Math.pow(enemy.y + this.enemyMgr.y - this.role.y, 2), 0.5);
+                    if (this.minDis > z) {
+                        this.target = enemy;
+                        this.minDis = z;
+                    }
+                }
+            }
+            if (this.target && this.target.isValid) {
+                this.atkDir = cc.v2(0, 1).signAngle(
+                    cc.v2(this.target.x + this.enemyMgr.x - this.role.x,
+                        this.target.y + this.enemyMgr.y - this.role.y));
+            }
+        }
+
+        if (this.node.name == "swampPet0") {
+            return;
+        }
+
         if (!this.isMove) {
             this.node.x = 0;
             this.node.y = 0;
@@ -37,26 +65,6 @@ export default class NewClass extends cc.Component {
                 cc.v2(Math.cos(this.node["atkDir"]) * 500, Math.sin(this.node["atkDir"]) * 500);
             return;
         }
-
-        if (this.enemyMgr.children.length > 0) {
-            for (let enemy of this.enemyMgr.children) {
-                let z = Math.pow(
-                    Math.pow(enemy.x + this.enemyMgr.x - this.role.x, 2) +
-                    Math.pow(enemy.y + this.enemyMgr.y - this.role.y, 2), 0.5);
-                if (this.minDis > z) {
-                    this.target = enemy;
-                    this.minDis = z;
-                }
-            }
-            this.atkDir = cc.v2(0, 1).signAngle(
-                cc.v2(this.target.x + this.enemyMgr.x - this.role.x,
-                    this.target.y + this.enemyMgr.y - this.role.y));
-        }
-
-        // if (this.node.name == "holyLight1") {
-        //     this.node.getComponent(cc.RigidBody).linearVelocity =
-        //         cc.v2(Math.cos(this.atkDir) * 100, Math.sin(this.atkDir) * 100);
-        // }
 
     }
 }

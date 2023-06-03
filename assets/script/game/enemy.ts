@@ -20,17 +20,59 @@ export default class NewClass extends cc.Component {
 
     skillJson: any = null;
 
-    onCollisonEnter(other: any, self: any) {
+    onCollisionEnter(other: any, self: any) {
+        if (!this.skillJson) {
+            this.skillJson = Res.getRes("json", "skill").json;
+        }
         if (other.tag == 0) {
             this.flag = true;
         }
-        else if (other.tag == 51) { }
+        if (other.tag == 51) {
+            this.curHp -= this.skillJson["skillHolyLight0"].hurt;
+        }
+        else if (other.tag == 52) {
+            this.curHp -= this.skillJson["skillHolyLight0"]["5"].hurt;
+        }
+        else if (other.tag == 53) {
+            this.curHp -= this.skillJson["skillHolyLight0"]["6"].hurt;
+        }
+        else if (other.tag == 54) {
+            this.curHp -= this.skillJson["skillEngineOil0"].hurt;
+        }
+        else if (other.tag == 55) {
+            this.curHp -= this.skillJson["skillEngineOil0"]["6"].hurt;
+        }
+        else if (other.tag == 56) {
+            this.curHp -= this.skillJson["skillSwampPet0"].hurt;
+        }
+        else if (other.tag == 57) {
+            this.curHp -= this.skillJson["skillSwampPet0"]["5"].hurt;
+        }
+        else if (other.tag == 58) {
+            this.curHp -= this.skillJson["skillKatana0"].hurt;
+        }
     }
 
     onCollisionStay(other: any, self: any) {
+        if (!this.skillJson) {
+            this.skillJson = Res.getRes("json", "skill").json;
+        }
         if (other.tag == 0) {
             this.flag = true;
         }
+        if (other.tag == 52) {
+            this.curHp -= this.skillJson["skillHolyLight0"]["5"].hurt;
+        }
+        else if (other.tag == 53) {
+            this.curHp -= this.skillJson["skillHolyLight0"]["6"].hurt;
+        }
+        else if (other.tag == 55) {
+            this.curHp -= this.skillJson["skillEngineOil0"]["6"].hurt;
+        }
+        else if (other.tag == 57) {
+            this.curHp -= this.skillJson["skillSwampPet0"]["5"].hurt;
+        }
+
     }
 
     onCollisionExit(other: any, self: any) {
@@ -40,16 +82,16 @@ export default class NewClass extends cc.Component {
     }
 
 
-    // onLoad () {}
+    // onLoad() {
+    // }
 
     start() {
         this.role = cc.find("Canvas/role");
-        this.skillJson = Res.getRes("json", "skill");
+        this.skillJson = Res.getRes("json", "skill").json;
         this.enemyJson = Res.getRes("json", "enemy").json;
-        this.curHp = this.MaxHp = this.enemyJson[this.node.name].maxHp;
-        this.node["exp"] = this.enemyJson[this.node.name].exp;
-        this.node["expId"] = this.enemyJson[this.node.name].expId;
         this.hpProgress.progress = this.curHp / this.MaxHp;
+        this.node["expId"] = this.enemyJson[this.node["name"]].expId;
+        this.curHp = this.MaxHp = this.enemyJson[this.node["name"]].maxHp;
     }
 
     update(dt) {
@@ -62,9 +104,13 @@ export default class NewClass extends cc.Component {
         if (this.curHp <= 0) {
             let expMgr = cc.find("Canvas/expMgr");
             let expNode = cc.instantiate(Res.getRes("prefab", this.node["expId"]));
+            expNode.x = this.node.x;
+            expNode.y = this.node.y;
             expMgr.addChild(expNode);
             expNode.active = true;
-            this.node.destroy();
+            this.scheduleOnce(() => {
+                this.node.destroy();
+            })
         }
         this.hpProgress.progress = this.curHp / this.MaxHp;
     }

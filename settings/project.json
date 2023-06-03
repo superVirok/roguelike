@@ -2,23 +2,44 @@
   "group-list": [
     "default",
     "uiLayer",
-    "role"
+    "role",
+    "skill",
+    "enemy"
   ],
   "collision-matrix": [
     [
       false,
       true,
+      true,
       true
     ],
     [
       true,
       false,
+      true,
+      true,
       true
     ],
     [
       true,
       true,
+      true,
+      null,
       true
+    ],
+    [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      false
     ]
   ],
   "excluded-modules": [

@@ -1,6 +1,5 @@
 import { Res } from "../lib/res"
-class skillEngineOil1 {
-    private static atkDir: any = null;
+class SkillEngineOil1 {
 
     static play(role: cc.Node, skillTime: number) {
         let skillNode = cc.instantiate(Res.getRes("weapon", "engineOil1"));
@@ -18,4 +17,4 @@ class skillEngineOil1 {
     }
 }
 
-export { skillEngineOil1 }
+export { SkillEngineOil1 }

@@ -1,11 +1,7 @@
 import { Res } from "../lib/res"
-class skillEngineOil0 {
-    private static atkDir: any = null;
-
+class SkillEngineOil0 {
     static play(role: cc.Node, skillTime: number) {
         let skillNode = cc.instantiate(Res.getRes("weapon", "engineOil0"));
-        skillNode.x = role.x;
-        skillNode.y = role.y;
         cc.find("Canvas").addChild(skillNode);
         let script = skillNode.getComponent("skill");
         let anim = skillNode.getComponent(cc.Animation);
@@ -20,4 +16,4 @@ class skillEngineOil0 {
     }
 }
 
-export { skillEngineOil0 }
+export { SkillEngineOil0 }

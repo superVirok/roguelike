@@ -67,7 +67,7 @@
         "hurt": 75,
         "expId": "exp2"
     },
-    "boss": {
+    "enemy11": {
         "name": "boss",
         "maxHp": 1200,
         "hurt": 200,

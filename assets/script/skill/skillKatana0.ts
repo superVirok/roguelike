@@ -1,7 +1,5 @@
 import { Res } from "../lib/res"
-class skillKatana0 {
-    private static atkDir: any = null;
-
+class SkillKatana0 {
     static play(role: cc.Node, skillTime: number) {
         let skillNode = cc.instantiate(Res.getRes("weapon", "katana0"));
         cc.find("Canvas/skillMgr").addChild(skillNode);
@@ -20,4 +18,4 @@ class skillKatana0 {
     }
 }
 
-export { skillKatana0 }
+export { SkillKatana0 }

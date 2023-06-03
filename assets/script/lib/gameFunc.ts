@@ -2,16 +2,21 @@ import { Res } from "../lib/res"
 class GameFunc {
     private static enemyList: any = null;
     private static startTime: number = null;
-    private static curTime: number = null;
+    private static curTime: number = 0;
     private static maxEnemyNum: number = 0;
     private static timeObj: Object = {}
-    private static bgSizex = 720;
-    private static bgSizey = 1280;
+    private static bgSizex = 1440;
+    private static bgSizey = 2560;
 
     static gameInit(enemyMgr: cc.Node) {
         let dt = new Date();
         this.startTime = 0;
         this.enemyList = Res.getFileList("enemy");
+        this.enemyList.sort((a: any, b: any) => {
+            const value1 = +(a.name.substring(a.name.indexOf("y") + 1));
+            const value2 = +(b.name.substring(a.name.indexOf("y") + 1));
+            return value1 - value2;
+        })
         for (let i in this.enemyList) {
             this.timeObj[i] = this.enemyList[i];
         }
@@ -28,7 +33,10 @@ class GameFunc {
         if (enemyMgr.children.length >= this.maxEnemyNum) {
             return;
         }
-        let enemyNum = Math.floor((this.curTime - this.startTime) / 120);
+        let enemyNum = Math.floor(Math.floor((this.curTime - this.startTime) / 120));
+        if (enemyNum >= this.enemyList.length - 1) {
+            enemyNum = this.enemyList.length - 1;
+        }
         let enemy = cc.instantiate(this.timeObj[enemyNum]);
         enemy.x = (Math.random() - 0.5) * this.bgSizex;
         enemy.y = (Math.random() - 0.5) * this.bgSizey;
@@ -45,3 +53,4 @@ class GameFunc {
 }
 
 export { GameFunc }
+

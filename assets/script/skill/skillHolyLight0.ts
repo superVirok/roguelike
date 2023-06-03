@@ -1,9 +1,7 @@
 import { Res } from "../lib/res"
 class SkillHolyLight0 {
     private static atkDir: any = null;
-    private static target: any = null;
     static play(role: cc.Node, skillTime: number) {
-        this.target = null;
         let skillNode = cc.instantiate(Res.getRes("weapon", "holyLight0"));
         cc.find("Canvas/skillMgr").addChild(skillNode);
         skillNode.x = 0;
@@ -18,12 +16,8 @@ class SkillHolyLight0 {
                 //     cc.v2((this.target.x + enemyMgr.x) - role.x,
                 //         (this.target.y + enemyMgr.y) - role.y));
                 skillNode.angle = this.atkDir / Math.PI * 180;
-                if (script.role.x - (script.target.x + script.enemyMgr.x) > 0) {
-                    skillNode.angle += 180;
-                }
-                if (script.role.y - (script.target.y + script.enemyMgr.y) > 0) {
-                    skillNode.angle += 180;
-                }
+                skillNode.scaleX = -1;
+                skillNode.scaleY = -1;
 
             }
         })

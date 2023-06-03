@@ -52,8 +52,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 400
+      "width": 200,
+      "height": 200
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -85,13 +85,13 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
+    "_groupIndex": 4,
+    "groupIndex": 4,
     "_id": ""
   },
   {
     "__type__": "cc.Node",
-    "_name": "hpProgressBar",
+    "_name": "hpProgress",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -135,8 +135,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -50,
-        215,
+        -15,
+        112,
         0,
         0,
         0,
@@ -156,8 +156,8 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
+    "_groupIndex": 4,
+    "groupIndex": 4,
     "_id": ""
   },
   {
@@ -220,8 +220,8 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
+    "_groupIndex": 4,
+    "groupIndex": 4,
     "_id": ""
   },
   {
@@ -414,13 +414,13 @@
     "tag": 10,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": 10,
+      "x": 0,
       "y": 0
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 360,
-      "height": 360
+      "width": 200,
+      "height": 200
     },
     "_id": ""
   },

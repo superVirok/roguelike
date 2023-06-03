@@ -21,7 +21,7 @@ export default class NewClass extends cc.Component {
                 let account = Res.getRes("json", "account").json;
                 cc.sys.localStorage.setItem("account", JSON.stringify(account));
             }
-            cc.director.loadScene("game");
+            cc.director.loadScene("swamp");
         }, 1)
     }
 

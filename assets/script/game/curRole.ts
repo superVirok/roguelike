@@ -10,10 +10,6 @@ export default class NewClass extends cc.Component {
     @property(cc.ProgressBar)
     hpProgress: cc.ProgressBar = null;
 
-    curHp: number = 0;
-    maxHp: number = 0;
-    defence: number = 0;
-    recover: number = 0;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -53,10 +49,13 @@ export default class NewClass extends cc.Component {
     }
 
     update(dt) {
+        if (this.node["curHp"] <= 0) {
+            this.node["curHp"] = 0;
+        }
         if (this.node["curHp"] + this.node["recover"] <= this.node["maxHp"]) {
             this.node["curHp"] += this.node["recover"];
         }
-        this.hpLabel.string = this.node["curHp"] + "/" + this.node["maxHp"];
+        this.hpLabel.string = Math.floor(this.node["curHp"]) + "/" + this.node["maxHp"];
         this.hpProgress.progress = this.node["curHp"] / this.node["maxHp"];
     }
 }
